@@ -1,1 +1,1 @@
-# aidenos-typescript-sdk
+# AidenOS Javscript SDK
