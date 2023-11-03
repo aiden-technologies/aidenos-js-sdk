@@ -34,12 +34,12 @@
 
   describe('(package)', function() {
     describe('DatasourceApi', function() {
-      describe('createApiV1DatasourcesPost', function() {
-        it('should call createApiV1DatasourcesPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1DatasourcesPost call and complete the assertions
+      describe('createDatasources', function() {
+        it('should call createDatasources successfully', function(done) {
+          // TODO: uncomment, update parameter values for createDatasources call and complete the assertions
           /*
 
-          instance.createApiV1DatasourcesPost(body, function(error, data, response) {
+          instance.createDatasources(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -54,12 +54,12 @@
           done();
         });
       });
-      describe('deleteApiV1DatasourcesDatasourceIdDelete', function() {
-        it('should call deleteApiV1DatasourcesDatasourceIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteApiV1DatasourcesDatasourceIdDelete call and complete the assertions
+      describe('deleteDatasource', function() {
+        it('should call deleteDatasource successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteDatasource call and complete the assertions
           /*
 
-          instance.deleteApiV1DatasourcesDatasourceIdDelete(datasourceId, function(error, data, response) {
+          instance.deleteDatasource(datasourceId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -75,12 +75,12 @@
           done();
         });
       });
-      describe('getApiV1DatasourcesDatasourceIdGet', function() {
-        it('should call getApiV1DatasourcesDatasourceIdGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for getApiV1DatasourcesDatasourceIdGet call and complete the assertions
+      describe('getDatasource', function() {
+        it('should call getDatasource successfully', function(done) {
+          // TODO: uncomment, update parameter values for getDatasource call and complete the assertions
           /*
 
-          instance.getApiV1DatasourcesDatasourceIdGet(datasourceId, function(error, data, response) {
+          instance.getDatasource(datasourceId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -95,12 +95,12 @@
           done();
         });
       });
-      describe('listApiV1DatasourcesGet', function() {
-        it('should call listApiV1DatasourcesGet successfully', function(done) {
-          // TODO: uncomment listApiV1DatasourcesGet call and complete the assertions
+      describe('listDatasources', function() {
+        it('should call listDatasources successfully', function(done) {
+          // TODO: uncomment listDatasources call and complete the assertions
           /*
 
-          instance.listApiV1DatasourcesGet(function(error, data, response) {
+          instance.listDatasources(function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -115,12 +115,12 @@
           done();
         });
       });
-      describe('updateApiV1DatasourcesDatasourceIdPatch', function() {
-        it('should call updateApiV1DatasourcesDatasourceIdPatch successfully', function(done) {
-          // TODO: uncomment, update parameter values for updateApiV1DatasourcesDatasourceIdPatch call and complete the assertions
+      describe('updateDatasource', function() {
+        it('should call updateDatasource successfully', function(done) {
+          // TODO: uncomment, update parameter values for updateDatasource call and complete the assertions
           /*
 
-          instance.updateApiV1DatasourcesDatasourceIdPatch(body, datasourceId, function(error, data, response) {
+          instance.updateDatasource(body, datasourceId, function(error, data, response) {
             if (error) {
               done(error);
               return;

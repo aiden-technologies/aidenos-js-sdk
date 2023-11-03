@@ -4,15 +4,15 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createApiV1ToolsPost**](ToolApi.md#createApiV1ToolsPost) | **POST** /api/v1/tools | Create
-[**deleteApiV1ToolsToolIdDelete**](ToolApi.md#deleteApiV1ToolsToolIdDelete) | **DELETE** /api/v1/tools/{tool_id} | Delete
+[**createTools**](ToolApi.md#createTools) | **POST** /api/v1/tools | Create
+[**deleteTool**](ToolApi.md#deleteTool) | **DELETE** /api/v1/tools/{tool_id} | Delete
 [**getApiV1ToolsToolIdGet**](ToolApi.md#getApiV1ToolsToolIdGet) | **GET** /api/v1/tools/{tool_id} | Get
-[**listApiV1ToolsGet**](ToolApi.md#listApiV1ToolsGet) | **GET** /api/v1/tools | List
+[**listTools**](ToolApi.md#listTools) | **GET** /api/v1/tools | List
 [**updateApiV1ToolsToolIdPatch**](ToolApi.md#updateApiV1ToolsToolIdPatch) | **PATCH** /api/v1/tools/{tool_id} | Update
 
-<a name="createApiV1ToolsPost"></a>
-# **createApiV1ToolsPost**
-> AppModelsResponseTool createApiV1ToolsPost(body)
+<a name="createTools"></a>
+# **createTools**
+> AppModelsResponseTool createTools(body)
 
 Create
 
@@ -27,7 +27,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.ToolApi();
 let body = new Askaiden.AppModelsRequestTool(); // AppModelsRequestTool | 
 
-apiInstance.createApiV1ToolsPost(body, (error, data, response) => {
+apiInstance.createTools(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -55,9 +55,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteApiV1ToolsToolIdDelete"></a>
-# **deleteApiV1ToolsToolIdDelete**
-> Object deleteApiV1ToolsToolIdDelete(toolId)
+<a name="deleteTool"></a>
+# **deleteTool**
+> Object deleteTool(toolId)
 
 Delete
 
@@ -72,7 +72,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.ToolApi();
 let toolId = "toolId_example"; // String | 
 
-apiInstance.deleteApiV1ToolsToolIdDelete(toolId, (error, data, response) => {
+apiInstance.deleteTool(toolId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -145,9 +145,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listApiV1ToolsGet"></a>
-# **listApiV1ToolsGet**
-> ToolList listApiV1ToolsGet()
+<a name="listTools"></a>
+# **listTools**
+> ToolList listTools()
 
 List
 
@@ -160,7 +160,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 
 
 let apiInstance = new Askaiden.ToolApi();
-apiInstance.listApiV1ToolsGet((error, data, response) => {
+apiInstance.listTools((error, data, response) => {
   if (error) {
     console.error(error);
   } else {

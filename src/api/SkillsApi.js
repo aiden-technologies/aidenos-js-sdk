@@ -45,8 +45,8 @@ export class SkillsApi {
     }
 
     /**
-     * Callback function to receive the result of the addDatasourceApiV1SkillsSkillIdDatasourcesPost operation.
-     * @callback moduleapi/SkillsApi~addDatasourceApiV1SkillsSkillIdDatasourcesPostCallback
+     * Callback function to receive the result of the addDatasource operation.
+     * @callback moduleapi/SkillsApi~addDatasourceCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkill{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -57,19 +57,19 @@ export class SkillsApi {
      * Add datasource to skill
      * @param {module:model/AppModelsRequestSkillDatasource} body 
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~addDatasourceApiV1SkillsSkillIdDatasourcesPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~addDatasourceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    addDatasourceApiV1SkillsSkillIdDatasourcesPost(body, skillId, callback) {
+    addDatasource(body, skillId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling addDatasourceApiV1SkillsSkillIdDatasourcesPost");
+        throw new Error("Missing the required parameter 'body' when calling addDatasource");
       }
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling addDatasourceApiV1SkillsSkillIdDatasourcesPost");
+        throw new Error("Missing the required parameter 'skillId' when calling addDatasource");
       }
 
       let pathParams = {
@@ -97,8 +97,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the addToolApiV1SkillsSkillIdToolsPost operation.
-     * @callback moduleapi/SkillsApi~addToolApiV1SkillsSkillIdToolsPostCallback
+     * Callback function to receive the result of the addSkillTool operation.
+     * @callback moduleapi/SkillsApi~addSkillToolCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkill{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -109,19 +109,19 @@ export class SkillsApi {
      * Add tool to skill
      * @param {module:model/AppModelsRequestSkillTool} body 
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~addToolApiV1SkillsSkillIdToolsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~addSkillToolCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    addToolApiV1SkillsSkillIdToolsPost(body, skillId, callback) {
+    addSkillTool(body, skillId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling addToolApiV1SkillsSkillIdToolsPost");
+        throw new Error("Missing the required parameter 'body' when calling addSkillTool");
       }
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling addToolApiV1SkillsSkillIdToolsPost");
+        throw new Error("Missing the required parameter 'skillId' when calling addSkillTool");
       }
 
       let pathParams = {
@@ -149,8 +149,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the createApiV1SkillsPost operation.
-     * @callback moduleapi/SkillsApi~createApiV1SkillsPostCallback
+     * Callback function to receive the result of the createSkill operation.
+     * @callback moduleapi/SkillsApi~createSkillCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkill{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -160,15 +160,15 @@ export class SkillsApi {
      * Create
      * Create a new skill
      * @param {module:model/AppModelsRequestSkill} body 
-     * @param {module:api/SkillsApi~createApiV1SkillsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~createSkillCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1SkillsPost(body, callback) {
+    createSkill(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1SkillsPost");
+        throw new Error("Missing the required parameter 'body' when calling createSkill");
       }
 
       let pathParams = {
@@ -196,8 +196,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1SkillsSkillIdDelete operation.
-     * @callback moduleapi/SkillsApi~deleteApiV1SkillsSkillIdDeleteCallback
+     * Callback function to receive the result of the deleteSkill operation.
+     * @callback moduleapi/SkillsApi~deleteSkillCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -207,15 +207,15 @@ export class SkillsApi {
      * Delete
      * Delete an skill
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~deleteApiV1SkillsSkillIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~deleteSkillCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1SkillsSkillIdDelete(skillId, callback) {
+    deleteSkill(skillId, callback) {
       
       let postBody = null;
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling deleteApiV1SkillsSkillIdDelete");
+        throw new Error("Missing the required parameter 'skillId' when calling deleteSkill");
       }
 
       let pathParams = {
@@ -243,8 +243,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the getApiV1SkillsSkillIdGet operation.
-     * @callback moduleapi/SkillsApi~getApiV1SkillsSkillIdGetCallback
+     * Callback function to receive the result of the getSkill operation.
+     * @callback moduleapi/SkillsApi~getSkillCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkill{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -254,15 +254,15 @@ export class SkillsApi {
      * Get
      * Get a single skill
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~getApiV1SkillsSkillIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~getSkillCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getApiV1SkillsSkillIdGet(skillId, callback) {
+    getSkill(skillId, callback) {
       
       let postBody = null;
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling getApiV1SkillsSkillIdGet");
+        throw new Error("Missing the required parameter 'skillId' when calling getSkill");
       }
 
       let pathParams = {
@@ -290,8 +290,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the invokeApiV1SkillsSkillIdInvokePost operation.
-     * @callback moduleapi/SkillsApi~invokeApiV1SkillsSkillIdInvokePostCallback
+     * Callback function to receive the result of the invokeSkill operation.
+     * @callback moduleapi/SkillsApi~invokeSkillCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkillInvoke{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -302,19 +302,19 @@ export class SkillsApi {
      * Invoke an skill
      * @param {module:model/AppModelsRequestSkillInvoke} body 
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~invokeApiV1SkillsSkillIdInvokePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~invokeSkillCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    invokeApiV1SkillsSkillIdInvokePost(body, skillId, callback) {
+    invokeSkill(body, skillId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling invokeApiV1SkillsSkillIdInvokePost");
+        throw new Error("Missing the required parameter 'body' when calling invokeSkill");
       }
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling invokeApiV1SkillsSkillIdInvokePost");
+        throw new Error("Missing the required parameter 'skillId' when calling invokeSkill");
       }
 
       let pathParams = {
@@ -342,8 +342,149 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the listApiV1SkillsGet operation.
-     * @callback moduleapi/SkillsApi~listApiV1SkillsGetCallback
+     * Callback function to receive the result of the listRuns operation.
+     * @callback moduleapi/SkillsApi~listRunsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SkillRunList{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List Runs
+     * List skill runs
+     * @param {String} skillId 
+     * @param {module:api/SkillsApi~listRunsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    listRuns(skillId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'skillId' is set
+      if (skillId === undefined || skillId === null) {
+        throw new Error("Missing the required parameter 'skillId' when calling listRuns");
+      }
+
+      let pathParams = {
+        'skill_id': skillId
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = ['HTTPBearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = SkillRunList;
+
+      return this.apiClient.callApi(
+        '/api/v1/skills/{skill_id}/runs', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the listSkillDatasources operation.
+     * @callback moduleapi/SkillsApi~listSkillDatasourcesCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SkillDatasosurceList{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List Datasources
+     * List skill datasources
+     * @param {String} skillId 
+     * @param {module:api/SkillsApi~listSkillDatasourcesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    listSkillDatasources(skillId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'skillId' is set
+      if (skillId === undefined || skillId === null) {
+        throw new Error("Missing the required parameter 'skillId' when calling listSkillDatasources");
+      }
+
+      let pathParams = {
+        'skill_id': skillId
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = ['HTTPBearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = SkillDatasosurceList;
+
+      return this.apiClient.callApi(
+        '/api/v1/skills/{skill_id}/datasources', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the listSkillTools operation.
+     * @callback moduleapi/SkillsApi~listSkillToolsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SkillToolList{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List Tools
+     * List skill tools
+     * @param {String} skillId 
+     * @param {module:api/SkillsApi~listSkillToolsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    listSkillTools(skillId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'skillId' is set
+      if (skillId === undefined || skillId === null) {
+        throw new Error("Missing the required parameter 'skillId' when calling listSkillTools");
+      }
+
+      let pathParams = {
+        'skill_id': skillId
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = ['HTTPBearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = SkillToolList;
+
+      return this.apiClient.callApi(
+        '/api/v1/skills/{skill_id}/tools', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the listSkills operation.
+     * @callback moduleapi/SkillsApi~listSkillsCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SkillList{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -352,10 +493,10 @@ export class SkillsApi {
     /**
      * List
      * List all skills
-     * @param {module:api/SkillsApi~listApiV1SkillsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~listSkillsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    listApiV1SkillsGet(callback) {
+    listSkills(callback) {
       
       let postBody = null;
 
@@ -384,149 +525,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the listDatasourcesApiV1SkillsSkillIdDatasourcesGet operation.
-     * @callback moduleapi/SkillsApi~listDatasourcesApiV1SkillsSkillIdDatasourcesGetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/SkillDatasosurceList{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List Datasources
-     * List skill datasources
-     * @param {String} skillId 
-     * @param {module:api/SkillsApi~listDatasourcesApiV1SkillsSkillIdDatasourcesGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    listDatasourcesApiV1SkillsSkillIdDatasourcesGet(skillId, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'skillId' is set
-      if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling listDatasourcesApiV1SkillsSkillIdDatasourcesGet");
-      }
-
-      let pathParams = {
-        'skill_id': skillId
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
-      let authNames = ['HTTPBearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = SkillDatasosurceList;
-
-      return this.apiClient.callApi(
-        '/api/v1/skills/{skill_id}/datasources', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the listRunsApiV1SkillsSkillIdRunsGet operation.
-     * @callback moduleapi/SkillsApi~listRunsApiV1SkillsSkillIdRunsGetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/SkillRunList{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List Runs
-     * List skill runs
-     * @param {String} skillId 
-     * @param {module:api/SkillsApi~listRunsApiV1SkillsSkillIdRunsGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    listRunsApiV1SkillsSkillIdRunsGet(skillId, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'skillId' is set
-      if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling listRunsApiV1SkillsSkillIdRunsGet");
-      }
-
-      let pathParams = {
-        'skill_id': skillId
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
-      let authNames = ['HTTPBearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = SkillRunList;
-
-      return this.apiClient.callApi(
-        '/api/v1/skills/{skill_id}/runs', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the listToolsApiV1SkillsSkillIdToolsGet operation.
-     * @callback moduleapi/SkillsApi~listToolsApiV1SkillsSkillIdToolsGetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/SkillToolList{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List Tools
-     * List skill tools
-     * @param {String} skillId 
-     * @param {module:api/SkillsApi~listToolsApiV1SkillsSkillIdToolsGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    listToolsApiV1SkillsSkillIdToolsGet(skillId, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'skillId' is set
-      if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling listToolsApiV1SkillsSkillIdToolsGet");
-      }
-
-      let pathParams = {
-        'skill_id': skillId
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
-      let authNames = ['HTTPBearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = SkillToolList;
-
-      return this.apiClient.callApi(
-        '/api/v1/skills/{skill_id}/tools', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete operation.
-     * @callback moduleapi/SkillsApi~removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDeleteCallback
+     * Callback function to receive the result of the removeDatasource operation.
+     * @callback moduleapi/SkillsApi~removeDatasourceCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -537,19 +537,19 @@ export class SkillsApi {
      * Remove datasource from skill
      * @param {String} skillId 
      * @param {String} datasourceId 
-     * @param {module:api/SkillsApi~removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~removeDatasourceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete(skillId, datasourceId, callback) {
+    removeDatasource(skillId, datasourceId, callback) {
       
       let postBody = null;
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete");
+        throw new Error("Missing the required parameter 'skillId' when calling removeDatasource");
       }
       // verify the required parameter 'datasourceId' is set
       if (datasourceId === undefined || datasourceId === null) {
-        throw new Error("Missing the required parameter 'datasourceId' when calling removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete");
+        throw new Error("Missing the required parameter 'datasourceId' when calling removeDatasource");
       }
 
       let pathParams = {
@@ -577,8 +577,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the removeToolApiV1SkillsSkillIdToolsToolIdDelete operation.
-     * @callback moduleapi/SkillsApi~removeToolApiV1SkillsSkillIdToolsToolIdDeleteCallback
+     * Callback function to receive the result of the removeTool operation.
+     * @callback moduleapi/SkillsApi~removeToolCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -589,19 +589,19 @@ export class SkillsApi {
      * Remove tool from skill
      * @param {String} skillId 
      * @param {String} toolId 
-     * @param {module:api/SkillsApi~removeToolApiV1SkillsSkillIdToolsToolIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~removeToolCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    removeToolApiV1SkillsSkillIdToolsToolIdDelete(skillId, toolId, callback) {
+    removeTool(skillId, toolId, callback) {
       
       let postBody = null;
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling removeToolApiV1SkillsSkillIdToolsToolIdDelete");
+        throw new Error("Missing the required parameter 'skillId' when calling removeTool");
       }
       // verify the required parameter 'toolId' is set
       if (toolId === undefined || toolId === null) {
-        throw new Error("Missing the required parameter 'toolId' when calling removeToolApiV1SkillsSkillIdToolsToolIdDelete");
+        throw new Error("Missing the required parameter 'toolId' when calling removeTool");
       }
 
       let pathParams = {
@@ -629,8 +629,8 @@ export class SkillsApi {
       );
     }
     /**
-     * Callback function to receive the result of the updateApiV1SkillsSkillIdPatch operation.
-     * @callback moduleapi/SkillsApi~updateApiV1SkillsSkillIdPatchCallback
+     * Callback function to receive the result of the updateSkill operation.
+     * @callback moduleapi/SkillsApi~updateSkillCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseSkill{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -641,19 +641,19 @@ export class SkillsApi {
      * Patch an skill
      * @param {module:model/AppModelsRequestSkill} body 
      * @param {String} skillId 
-     * @param {module:api/SkillsApi~updateApiV1SkillsSkillIdPatchCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SkillsApi~updateSkillCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    updateApiV1SkillsSkillIdPatch(body, skillId, callback) {
+    updateSkill(body, skillId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling updateApiV1SkillsSkillIdPatch");
+        throw new Error("Missing the required parameter 'body' when calling updateSkill");
       }
       // verify the required parameter 'skillId' is set
       if (skillId === undefined || skillId === null) {
-        throw new Error("Missing the required parameter 'skillId' when calling updateApiV1SkillsSkillIdPatch");
+        throw new Error("Missing the required parameter 'skillId' when calling updateSkill");
       }
 
       let pathParams = {

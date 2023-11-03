@@ -38,8 +38,8 @@ export class DatasourceApi {
     }
 
     /**
-     * Callback function to receive the result of the createApiV1DatasourcesPost operation.
-     * @callback moduleapi/DatasourceApi~createApiV1DatasourcesPostCallback
+     * Callback function to receive the result of the createDatasources operation.
+     * @callback moduleapi/DatasourceApi~createDatasourcesCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseDatasource{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -49,15 +49,15 @@ export class DatasourceApi {
      * Create
      * Create a new datasource
      * @param {module:model/AppModelsRequestDatasource} body 
-     * @param {module:api/DatasourceApi~createApiV1DatasourcesPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DatasourceApi~createDatasourcesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1DatasourcesPost(body, callback) {
+    createDatasources(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1DatasourcesPost");
+        throw new Error("Missing the required parameter 'body' when calling createDatasources");
       }
 
       let pathParams = {
@@ -85,8 +85,8 @@ export class DatasourceApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1DatasourcesDatasourceIdDelete operation.
-     * @callback moduleapi/DatasourceApi~deleteApiV1DatasourcesDatasourceIdDeleteCallback
+     * Callback function to receive the result of the deleteDatasource operation.
+     * @callback moduleapi/DatasourceApi~deleteDatasourceCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -96,15 +96,15 @@ export class DatasourceApi {
      * Delete
      * Delete a specific datasource
      * @param {String} datasourceId 
-     * @param {module:api/DatasourceApi~deleteApiV1DatasourcesDatasourceIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DatasourceApi~deleteDatasourceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1DatasourcesDatasourceIdDelete(datasourceId, callback) {
+    deleteDatasource(datasourceId, callback) {
       
       let postBody = null;
       // verify the required parameter 'datasourceId' is set
       if (datasourceId === undefined || datasourceId === null) {
-        throw new Error("Missing the required parameter 'datasourceId' when calling deleteApiV1DatasourcesDatasourceIdDelete");
+        throw new Error("Missing the required parameter 'datasourceId' when calling deleteDatasource");
       }
 
       let pathParams = {
@@ -132,8 +132,8 @@ export class DatasourceApi {
       );
     }
     /**
-     * Callback function to receive the result of the getApiV1DatasourcesDatasourceIdGet operation.
-     * @callback moduleapi/DatasourceApi~getApiV1DatasourcesDatasourceIdGetCallback
+     * Callback function to receive the result of the getDatasource operation.
+     * @callback moduleapi/DatasourceApi~getDatasourceCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseDatasource{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -143,15 +143,15 @@ export class DatasourceApi {
      * Get
      * Get a specific datasource
      * @param {String} datasourceId 
-     * @param {module:api/DatasourceApi~getApiV1DatasourcesDatasourceIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DatasourceApi~getDatasourceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getApiV1DatasourcesDatasourceIdGet(datasourceId, callback) {
+    getDatasource(datasourceId, callback) {
       
       let postBody = null;
       // verify the required parameter 'datasourceId' is set
       if (datasourceId === undefined || datasourceId === null) {
-        throw new Error("Missing the required parameter 'datasourceId' when calling getApiV1DatasourcesDatasourceIdGet");
+        throw new Error("Missing the required parameter 'datasourceId' when calling getDatasource");
       }
 
       let pathParams = {
@@ -179,8 +179,8 @@ export class DatasourceApi {
       );
     }
     /**
-     * Callback function to receive the result of the listApiV1DatasourcesGet operation.
-     * @callback moduleapi/DatasourceApi~listApiV1DatasourcesGetCallback
+     * Callback function to receive the result of the listDatasources operation.
+     * @callback moduleapi/DatasourceApi~listDatasourcesCallback
      * @param {String} error Error message, if any.
      * @param {module:model/DatasourceList{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -189,10 +189,10 @@ export class DatasourceApi {
     /**
      * List
      * List all datasources
-     * @param {module:api/DatasourceApi~listApiV1DatasourcesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DatasourceApi~listDatasourcesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    listApiV1DatasourcesGet(callback) {
+    listDatasources(callback) {
       
       let postBody = null;
 
@@ -221,8 +221,8 @@ export class DatasourceApi {
       );
     }
     /**
-     * Callback function to receive the result of the updateApiV1DatasourcesDatasourceIdPatch operation.
-     * @callback moduleapi/DatasourceApi~updateApiV1DatasourcesDatasourceIdPatchCallback
+     * Callback function to receive the result of the updateDatasource operation.
+     * @callback moduleapi/DatasourceApi~updateDatasourceCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseDatasource{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -233,19 +233,19 @@ export class DatasourceApi {
      * Update a specific datasource
      * @param {module:model/AppModelsRequestDatasource} body 
      * @param {String} datasourceId 
-     * @param {module:api/DatasourceApi~updateApiV1DatasourcesDatasourceIdPatchCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DatasourceApi~updateDatasourceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    updateApiV1DatasourcesDatasourceIdPatch(body, datasourceId, callback) {
+    updateDatasource(body, datasourceId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling updateApiV1DatasourcesDatasourceIdPatch");
+        throw new Error("Missing the required parameter 'body' when calling updateDatasource");
       }
       // verify the required parameter 'datasourceId' is set
       if (datasourceId === undefined || datasourceId === null) {
-        throw new Error("Missing the required parameter 'datasourceId' when calling updateApiV1DatasourcesDatasourceIdPatch");
+        throw new Error("Missing the required parameter 'datasourceId' when calling updateDatasource");
       }
 
       let pathParams = {

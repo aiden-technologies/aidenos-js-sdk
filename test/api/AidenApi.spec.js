@@ -34,12 +34,12 @@
 
   describe('(package)', function() {
     describe('AidenApi', function() {
-      describe('addStepApiV1AidenAidenIdStepsPost', function() {
-        it('should call addStepApiV1AidenAidenIdStepsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for addStepApiV1AidenAidenIdStepsPost call and complete the assertions
+      describe('addAidenStep', function() {
+        it('should call addAidenStep successfully', function(done) {
+          // TODO: uncomment, update parameter values for addAidenStep call and complete the assertions
           /*
 
-          instance.addStepApiV1AidenAidenIdStepsPost(body, aidenId, function(error, data, response) {
+          instance.addAidenStep(body, aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -54,12 +54,12 @@
           done();
         });
       });
-      describe('createApiV1AidenPost', function() {
-        it('should call createApiV1AidenPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1AidenPost call and complete the assertions
+      describe('createAiden', function() {
+        it('should call createAiden successfully', function(done) {
+          // TODO: uncomment, update parameter values for createAiden call and complete the assertions
           /*
 
-          instance.createApiV1AidenPost(body, function(error, data, response) {
+          instance.createAiden(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -74,12 +74,12 @@
           done();
         });
       });
-      describe('deleteApiV1AidenAidenIdDelete', function() {
-        it('should call deleteApiV1AidenAidenIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteApiV1AidenAidenIdDelete call and complete the assertions
+      describe('deleteAiden', function() {
+        it('should call deleteAiden successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteAiden call and complete the assertions
           /*
 
-          instance.deleteApiV1AidenAidenIdDelete(aidenId, function(error, data, response) {
+          instance.deleteAiden(aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -95,12 +95,12 @@
           done();
         });
       });
-      describe('deleteStepApiV1AidenAidenIdStepsStepIdDelete', function() {
-        it('should call deleteStepApiV1AidenAidenIdStepsStepIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteStepApiV1AidenAidenIdStepsStepIdDelete call and complete the assertions
+      describe('deleteAidenStep', function() {
+        it('should call deleteAidenStep successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteAidenStep call and complete the assertions
           /*
 
-          instance.deleteStepApiV1AidenAidenIdStepsStepIdDelete(aidenId, stepId, function(error, data, response) {
+          instance.deleteAidenStep(aidenId, stepId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -116,12 +116,12 @@
           done();
         });
       });
-      describe('getApiV1AidenAidenIdGet', function() {
-        it('should call getApiV1AidenAidenIdGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for getApiV1AidenAidenIdGet call and complete the assertions
+      describe('getAiden', function() {
+        it('should call getAiden successfully', function(done) {
+          // TODO: uncomment, update parameter values for getAiden call and complete the assertions
           /*
 
-          instance.getApiV1AidenAidenIdGet(aidenId, function(error, data, response) {
+          instance.getAiden(aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -136,12 +136,12 @@
           done();
         });
       });
-      describe('invokeApiV1AidenAidenIdInvokePost', function() {
-        it('should call invokeApiV1AidenAidenIdInvokePost successfully', function(done) {
-          // TODO: uncomment, update parameter values for invokeApiV1AidenAidenIdInvokePost call and complete the assertions
+      describe('invokeAiden', function() {
+        it('should call invokeAiden successfully', function(done) {
+          // TODO: uncomment, update parameter values for invokeAiden call and complete the assertions
           /*
 
-          instance.invokeApiV1AidenAidenIdInvokePost(body, aidenId, function(error, data, response) {
+          instance.invokeAiden(body, aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -157,12 +157,12 @@
           done();
         });
       });
-      describe('listApiV1AidenGet', function() {
-        it('should call listApiV1AidenGet successfully', function(done) {
-          // TODO: uncomment listApiV1AidenGet call and complete the assertions
+      describe('listAidenSteps', function() {
+        it('should call listAidenSteps successfully', function(done) {
+          // TODO: uncomment, update parameter values for listAidenSteps call and complete the assertions
           /*
 
-          instance.listApiV1AidenGet(function(error, data, response) {
+          instance.listAidenSteps(aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -177,12 +177,12 @@
           done();
         });
       });
-      describe('listStepsApiV1AidenAidenIdStepsGet', function() {
-        it('should call listStepsApiV1AidenAidenIdStepsGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for listStepsApiV1AidenAidenIdStepsGet call and complete the assertions
+      describe('listAidens', function() {
+        it('should call listAidens successfully', function(done) {
+          // TODO: uncomment listAidens call and complete the assertions
           /*
 
-          instance.listStepsApiV1AidenAidenIdStepsGet(aidenId, function(error, data, response) {
+          instance.listAidens(function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -197,12 +197,12 @@
           done();
         });
       });
-      describe('updateApiV1AidenAidenIdPatch', function() {
-        it('should call updateApiV1AidenAidenIdPatch successfully', function(done) {
-          // TODO: uncomment, update parameter values for updateApiV1AidenAidenIdPatch call and complete the assertions
+      describe('updateAiden', function() {
+        it('should call updateAiden successfully', function(done) {
+          // TODO: uncomment, update parameter values for updateAiden call and complete the assertions
           /*
 
-          instance.updateApiV1AidenAidenIdPatch(body, aidenId, function(error, data, response) {
+          instance.updateAiden(body, aidenId, function(error, data, response) {
             if (error) {
               done(error);
               return;

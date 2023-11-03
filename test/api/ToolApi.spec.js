@@ -34,12 +34,12 @@
 
   describe('(package)', function() {
     describe('ToolApi', function() {
-      describe('createApiV1ToolsPost', function() {
-        it('should call createApiV1ToolsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1ToolsPost call and complete the assertions
+      describe('createTools', function() {
+        it('should call createTools successfully', function(done) {
+          // TODO: uncomment, update parameter values for createTools call and complete the assertions
           /*
 
-          instance.createApiV1ToolsPost(body, function(error, data, response) {
+          instance.createTools(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -54,12 +54,12 @@
           done();
         });
       });
-      describe('deleteApiV1ToolsToolIdDelete', function() {
-        it('should call deleteApiV1ToolsToolIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteApiV1ToolsToolIdDelete call and complete the assertions
+      describe('deleteTool', function() {
+        it('should call deleteTool successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteTool call and complete the assertions
           /*
 
-          instance.deleteApiV1ToolsToolIdDelete(toolId, function(error, data, response) {
+          instance.deleteTool(toolId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -95,12 +95,12 @@
           done();
         });
       });
-      describe('listApiV1ToolsGet', function() {
-        it('should call listApiV1ToolsGet successfully', function(done) {
-          // TODO: uncomment listApiV1ToolsGet call and complete the assertions
+      describe('listTools', function() {
+        it('should call listTools successfully', function(done) {
+          // TODO: uncomment listTools call and complete the assertions
           /*
 
-          instance.listApiV1ToolsGet(function(error, data, response) {
+          instance.listTools(function(error, data, response) {
             if (error) {
               done(error);
               return;

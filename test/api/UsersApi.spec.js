@@ -34,12 +34,12 @@
 
   describe('(package)', function() {
     describe('UsersApi', function() {
-      describe('createApiV1UserPost', function() {
-        it('should call createApiV1UserPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1UserPost call and complete the assertions
+      describe('createUser', function() {
+        it('should call createUser successfully', function(done) {
+          // TODO: uncomment, update parameter values for createUser call and complete the assertions
           /*
 
-          instance.createApiV1UserPost(body, function(error, data, response) {
+          instance.createUser(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -55,12 +55,12 @@
           done();
         });
       });
-      describe('deleteApiV1UserDelete', function() {
-        it('should call deleteApiV1UserDelete successfully', function(done) {
-          // TODO: uncomment deleteApiV1UserDelete call and complete the assertions
+      describe('deleteUser', function() {
+        it('should call deleteUser successfully', function(done) {
+          // TODO: uncomment deleteUser call and complete the assertions
           /*
 
-          instance.deleteApiV1UserDelete(function(error, data, response) {
+          instance.deleteUser(function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -76,12 +76,12 @@
           done();
         });
       });
-      describe('getApiV1UserGet', function() {
-        it('should call getApiV1UserGet successfully', function(done) {
-          // TODO: uncomment getApiV1UserGet call and complete the assertions
+      describe('getUser', function() {
+        it('should call getUser successfully', function(done) {
+          // TODO: uncomment getUser call and complete the assertions
           /*
 
-          instance.getApiV1UserGet(function(error, data, response) {
+          instance.getUser(function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -96,12 +96,12 @@
           done();
         });
       });
-      describe('updateApiV1UserPatch', function() {
-        it('should call updateApiV1UserPatch successfully', function(done) {
-          // TODO: uncomment, update parameter values for updateApiV1UserPatch call and complete the assertions
+      describe('updateUser', function() {
+        it('should call updateUser successfully', function(done) {
+          // TODO: uncomment, update parameter values for updateUser call and complete the assertions
           /*
 
-          instance.updateApiV1UserPatch(body, function(error, data, response) {
+          instance.updateUser(body, function(error, data, response) {
             if (error) {
               done(error);
               return;

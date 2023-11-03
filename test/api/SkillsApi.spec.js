@@ -34,12 +34,12 @@
 
   describe('(package)', function() {
     describe('SkillsApi', function() {
-      describe('addDatasourceApiV1SkillsSkillIdDatasourcesPost', function() {
-        it('should call addDatasourceApiV1SkillsSkillIdDatasourcesPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for addDatasourceApiV1SkillsSkillIdDatasourcesPost call and complete the assertions
+      describe('addDatasource', function() {
+        it('should call addDatasource successfully', function(done) {
+          // TODO: uncomment, update parameter values for addDatasource call and complete the assertions
           /*
 
-          instance.addDatasourceApiV1SkillsSkillIdDatasourcesPost(body, skillId, function(error, data, response) {
+          instance.addDatasource(body, skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -54,12 +54,12 @@
           done();
         });
       });
-      describe('addToolApiV1SkillsSkillIdToolsPost', function() {
-        it('should call addToolApiV1SkillsSkillIdToolsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for addToolApiV1SkillsSkillIdToolsPost call and complete the assertions
+      describe('addSkillTool', function() {
+        it('should call addSkillTool successfully', function(done) {
+          // TODO: uncomment, update parameter values for addSkillTool call and complete the assertions
           /*
 
-          instance.addToolApiV1SkillsSkillIdToolsPost(body, skillId, function(error, data, response) {
+          instance.addSkillTool(body, skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -74,12 +74,12 @@
           done();
         });
       });
-      describe('createApiV1SkillsPost', function() {
-        it('should call createApiV1SkillsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1SkillsPost call and complete the assertions
+      describe('createSkill', function() {
+        it('should call createSkill successfully', function(done) {
+          // TODO: uncomment, update parameter values for createSkill call and complete the assertions
           /*
 
-          instance.createApiV1SkillsPost(body, function(error, data, response) {
+          instance.createSkill(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -94,12 +94,12 @@
           done();
         });
       });
-      describe('deleteApiV1SkillsSkillIdDelete', function() {
-        it('should call deleteApiV1SkillsSkillIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteApiV1SkillsSkillIdDelete call and complete the assertions
+      describe('deleteSkill', function() {
+        it('should call deleteSkill successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteSkill call and complete the assertions
           /*
 
-          instance.deleteApiV1SkillsSkillIdDelete(skillId, function(error, data, response) {
+          instance.deleteSkill(skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -115,12 +115,12 @@
           done();
         });
       });
-      describe('getApiV1SkillsSkillIdGet', function() {
-        it('should call getApiV1SkillsSkillIdGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for getApiV1SkillsSkillIdGet call and complete the assertions
+      describe('getSkill', function() {
+        it('should call getSkill successfully', function(done) {
+          // TODO: uncomment, update parameter values for getSkill call and complete the assertions
           /*
 
-          instance.getApiV1SkillsSkillIdGet(skillId, function(error, data, response) {
+          instance.getSkill(skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -135,12 +135,12 @@
           done();
         });
       });
-      describe('invokeApiV1SkillsSkillIdInvokePost', function() {
-        it('should call invokeApiV1SkillsSkillIdInvokePost successfully', function(done) {
-          // TODO: uncomment, update parameter values for invokeApiV1SkillsSkillIdInvokePost call and complete the assertions
+      describe('invokeSkill', function() {
+        it('should call invokeSkill successfully', function(done) {
+          // TODO: uncomment, update parameter values for invokeSkill call and complete the assertions
           /*
 
-          instance.invokeApiV1SkillsSkillIdInvokePost(body, skillId, function(error, data, response) {
+          instance.invokeSkill(body, skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -155,52 +155,12 @@
           done();
         });
       });
-      describe('listApiV1SkillsGet', function() {
-        it('should call listApiV1SkillsGet successfully', function(done) {
-          // TODO: uncomment listApiV1SkillsGet call and complete the assertions
+      describe('listRuns', function() {
+        it('should call listRuns successfully', function(done) {
+          // TODO: uncomment, update parameter values for listRuns call and complete the assertions
           /*
 
-          instance.listApiV1SkillsGet(function(error, data, response) {
-            if (error) {
-              done(error);
-              return;
-            }
-            // TODO: update response assertions
-            expect(data).to.be.a(Askaiden.SkillList);
-
-            done();
-          });
-          */
-          // TODO: uncomment and complete method invocation above, then delete this line and the next:
-          done();
-        });
-      });
-      describe('listDatasourcesApiV1SkillsSkillIdDatasourcesGet', function() {
-        it('should call listDatasourcesApiV1SkillsSkillIdDatasourcesGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for listDatasourcesApiV1SkillsSkillIdDatasourcesGet call and complete the assertions
-          /*
-
-          instance.listDatasourcesApiV1SkillsSkillIdDatasourcesGet(skillId, function(error, data, response) {
-            if (error) {
-              done(error);
-              return;
-            }
-            // TODO: update response assertions
-            expect(data).to.be.a(Askaiden.SkillDatasosurceList);
-
-            done();
-          });
-          */
-          // TODO: uncomment and complete method invocation above, then delete this line and the next:
-          done();
-        });
-      });
-      describe('listRunsApiV1SkillsSkillIdRunsGet', function() {
-        it('should call listRunsApiV1SkillsSkillIdRunsGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for listRunsApiV1SkillsSkillIdRunsGet call and complete the assertions
-          /*
-
-          instance.listRunsApiV1SkillsSkillIdRunsGet(skillId, function(error, data, response) {
+          instance.listRuns(skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -215,12 +175,32 @@
           done();
         });
       });
-      describe('listToolsApiV1SkillsSkillIdToolsGet', function() {
-        it('should call listToolsApiV1SkillsSkillIdToolsGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for listToolsApiV1SkillsSkillIdToolsGet call and complete the assertions
+      describe('listSkillDatasources', function() {
+        it('should call listSkillDatasources successfully', function(done) {
+          // TODO: uncomment, update parameter values for listSkillDatasources call and complete the assertions
           /*
 
-          instance.listToolsApiV1SkillsSkillIdToolsGet(skillId, function(error, data, response) {
+          instance.listSkillDatasources(skillId, function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a(Askaiden.SkillDatasosurceList);
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
+      describe('listSkillTools', function() {
+        it('should call listSkillTools successfully', function(done) {
+          // TODO: uncomment, update parameter values for listSkillTools call and complete the assertions
+          /*
+
+          instance.listSkillTools(skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -235,12 +215,32 @@
           done();
         });
       });
-      describe('removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete', function() {
-        it('should call removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete call and complete the assertions
+      describe('listSkills', function() {
+        it('should call listSkills successfully', function(done) {
+          // TODO: uncomment listSkills call and complete the assertions
           /*
 
-          instance.removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete(skillId, datasourceId, function(error, data, response) {
+          instance.listSkills(function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a(Askaiden.SkillList);
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
+      describe('removeDatasource', function() {
+        it('should call removeDatasource successfully', function(done) {
+          // TODO: uncomment, update parameter values for removeDatasource call and complete the assertions
+          /*
+
+          instance.removeDatasource(skillId, datasourceId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -256,12 +256,12 @@
           done();
         });
       });
-      describe('removeToolApiV1SkillsSkillIdToolsToolIdDelete', function() {
-        it('should call removeToolApiV1SkillsSkillIdToolsToolIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for removeToolApiV1SkillsSkillIdToolsToolIdDelete call and complete the assertions
+      describe('removeTool', function() {
+        it('should call removeTool successfully', function(done) {
+          // TODO: uncomment, update parameter values for removeTool call and complete the assertions
           /*
 
-          instance.removeToolApiV1SkillsSkillIdToolsToolIdDelete(skillId, toolId, function(error, data, response) {
+          instance.removeTool(skillId, toolId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -277,12 +277,12 @@
           done();
         });
       });
-      describe('updateApiV1SkillsSkillIdPatch', function() {
-        it('should call updateApiV1SkillsSkillIdPatch successfully', function(done) {
-          // TODO: uncomment, update parameter values for updateApiV1SkillsSkillIdPatch call and complete the assertions
+      describe('updateSkill', function() {
+        it('should call updateSkill successfully', function(done) {
+          // TODO: uncomment, update parameter values for updateSkill call and complete the assertions
           /*
 
-          instance.updateApiV1SkillsSkillIdPatch(body, skillId, function(error, data, response) {
+          instance.updateSkill(body, skillId, function(error, data, response) {
             if (error) {
               done(error);
               return;

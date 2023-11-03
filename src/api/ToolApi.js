@@ -38,8 +38,8 @@ export class ToolApi {
     }
 
     /**
-     * Callback function to receive the result of the createApiV1ToolsPost operation.
-     * @callback moduleapi/ToolApi~createApiV1ToolsPostCallback
+     * Callback function to receive the result of the createTools operation.
+     * @callback moduleapi/ToolApi~createToolsCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseTool{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -49,15 +49,15 @@ export class ToolApi {
      * Create
      * Create a new tool
      * @param {module:model/AppModelsRequestTool} body 
-     * @param {module:api/ToolApi~createApiV1ToolsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ToolApi~createToolsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1ToolsPost(body, callback) {
+    createTools(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1ToolsPost");
+        throw new Error("Missing the required parameter 'body' when calling createTools");
       }
 
       let pathParams = {
@@ -85,8 +85,8 @@ export class ToolApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1ToolsToolIdDelete operation.
-     * @callback moduleapi/ToolApi~deleteApiV1ToolsToolIdDeleteCallback
+     * Callback function to receive the result of the deleteTool operation.
+     * @callback moduleapi/ToolApi~deleteToolCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -96,15 +96,15 @@ export class ToolApi {
      * Delete
      * Delete a specific tool
      * @param {String} toolId 
-     * @param {module:api/ToolApi~deleteApiV1ToolsToolIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ToolApi~deleteToolCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1ToolsToolIdDelete(toolId, callback) {
+    deleteTool(toolId, callback) {
       
       let postBody = null;
       // verify the required parameter 'toolId' is set
       if (toolId === undefined || toolId === null) {
-        throw new Error("Missing the required parameter 'toolId' when calling deleteApiV1ToolsToolIdDelete");
+        throw new Error("Missing the required parameter 'toolId' when calling deleteTool");
       }
 
       let pathParams = {
@@ -179,8 +179,8 @@ export class ToolApi {
       );
     }
     /**
-     * Callback function to receive the result of the listApiV1ToolsGet operation.
-     * @callback moduleapi/ToolApi~listApiV1ToolsGetCallback
+     * Callback function to receive the result of the listTools operation.
+     * @callback moduleapi/ToolApi~listToolsCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ToolList{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -189,10 +189,10 @@ export class ToolApi {
     /**
      * List
      * List all tools
-     * @param {module:api/ToolApi~listApiV1ToolsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ToolApi~listToolsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    listApiV1ToolsGet(callback) {
+    listTools(callback) {
       
       let postBody = null;
 

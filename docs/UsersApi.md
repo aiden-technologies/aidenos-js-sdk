@@ -4,14 +4,14 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createApiV1UserPost**](UsersApi.md#createApiV1UserPost) | **POST** /api/v1/user | Create
-[**deleteApiV1UserDelete**](UsersApi.md#deleteApiV1UserDelete) | **DELETE** /api/v1/user | Delete
-[**getApiV1UserGet**](UsersApi.md#getApiV1UserGet) | **GET** /api/v1/user | Get
-[**updateApiV1UserPatch**](UsersApi.md#updateApiV1UserPatch) | **PATCH** /api/v1/user | Update
+[**createUser**](UsersApi.md#createUser) | **POST** /api/v1/user | Create
+[**deleteUser**](UsersApi.md#deleteUser) | **DELETE** /api/v1/user | Delete
+[**getUser**](UsersApi.md#getUser) | **GET** /api/v1/user | Get
+[**updateUser**](UsersApi.md#updateUser) | **PATCH** /api/v1/user | Update
 
-<a name="createApiV1UserPost"></a>
-# **createApiV1UserPost**
-> Object createApiV1UserPost(body)
+<a name="createUser"></a>
+# **createUser**
+> Object createUser(body)
 
 Create
 
@@ -26,7 +26,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.UsersApi();
 let body = new Askaiden.AppModelsRequestUser(); // AppModelsRequestUser | 
 
-apiInstance.createApiV1UserPost(body, (error, data, response) => {
+apiInstance.createUser(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -54,9 +54,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteApiV1UserDelete"></a>
-# **deleteApiV1UserDelete**
-> Object deleteApiV1UserDelete()
+<a name="deleteUser"></a>
+# **deleteUser**
+> Object deleteUser()
 
 Delete
 
@@ -69,7 +69,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 
 
 let apiInstance = new Askaiden.UsersApi();
-apiInstance.deleteApiV1UserDelete((error, data, response) => {
+apiInstance.deleteUser((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -94,9 +94,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getApiV1UserGet"></a>
-# **getApiV1UserGet**
-> AppModelsRequestUser getApiV1UserGet()
+<a name="getUser"></a>
+# **getUser**
+> AppModelsRequestUser getUser()
 
 Get
 
@@ -109,7 +109,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 
 
 let apiInstance = new Askaiden.UsersApi();
-apiInstance.getApiV1UserGet((error, data, response) => {
+apiInstance.getUser((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -134,9 +134,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="updateApiV1UserPatch"></a>
-# **updateApiV1UserPatch**
-> AppModelsResponseUser updateApiV1UserPatch(body)
+<a name="updateUser"></a>
+# **updateUser**
+> AppModelsResponseUser updateUser(body)
 
 Update
 
@@ -151,7 +151,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.UsersApi();
 let body = new Askaiden.AppModelsRequestUser(); // AppModelsRequestUser | 
 
-apiInstance.updateApiV1UserPatch(body, (error, data, response) => {
+apiInstance.updateUser(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

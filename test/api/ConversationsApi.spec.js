@@ -34,13 +34,13 @@
 
   describe('(package)', function() {
     describe('ConversationsApi', function() {
-      describe('createApiV1ConversationsPost', function() {
-        it('should call createApiV1ConversationsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createApiV1ConversationsPost call and complete the assertions
+      describe('createConversations', function() {
+        it('should call createConversations successfully', function(done) {
+          // TODO: uncomment, update parameter values for createConversations call and complete the assertions
           /*
           var opts = {};
 
-          instance.createApiV1ConversationsPost(body, opts, function(error, data, response) {
+          instance.createConversations(body, opts, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -56,12 +56,12 @@
           done();
         });
       });
-      describe('deleteApiV1ConversationsConversationIdDelete', function() {
-        it('should call deleteApiV1ConversationsConversationIdDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteApiV1ConversationsConversationIdDelete call and complete the assertions
+      describe('deleteConversations', function() {
+        it('should call deleteConversations successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteConversations call and complete the assertions
           /*
 
-          instance.deleteApiV1ConversationsConversationIdDelete(conversationId, function(error, data, response) {
+          instance.deleteConversations(conversationId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -77,12 +77,12 @@
           done();
         });
       });
-      describe('listApiV1ConversationsConversationIdMessagesGet', function() {
-        it('should call listApiV1ConversationsConversationIdMessagesGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for listApiV1ConversationsConversationIdMessagesGet call and complete the assertions
+      describe('listConversations', function() {
+        it('should call listConversations successfully', function(done) {
+          // TODO: uncomment listConversations call and complete the assertions
           /*
 
-          instance.listApiV1ConversationsConversationIdMessagesGet(conversationId, function(error, data, response) {
+          instance.listConversations(function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -98,12 +98,12 @@
           done();
         });
       });
-      describe('listApiV1ConversationsGet', function() {
-        it('should call listApiV1ConversationsGet successfully', function(done) {
-          // TODO: uncomment listApiV1ConversationsGet call and complete the assertions
+      describe('listMessages', function() {
+        it('should call listMessages successfully', function(done) {
+          // TODO: uncomment, update parameter values for listMessages call and complete the assertions
           /*
 
-          instance.listApiV1ConversationsGet(function(error, data, response) {
+          instance.listMessages(conversationId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -119,12 +119,12 @@
           done();
         });
       });
-      describe('updateApiV1ConversationsConversationIdPatch', function() {
-        it('should call updateApiV1ConversationsConversationIdPatch successfully', function(done) {
-          // TODO: uncomment, update parameter values for updateApiV1ConversationsConversationIdPatch call and complete the assertions
+      describe('updateConversations', function() {
+        it('should call updateConversations successfully', function(done) {
+          // TODO: uncomment, update parameter values for updateConversations call and complete the assertions
           /*
 
-          instance.updateApiV1ConversationsConversationIdPatch(body, conversationId, function(error, data, response) {
+          instance.updateConversations(body, conversationId, function(error, data, response) {
             if (error) {
               done(error);
               return;

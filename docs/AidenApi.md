@@ -4,19 +4,19 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addStepApiV1AidenAidenIdStepsPost**](AidenApi.md#addStepApiV1AidenAidenIdStepsPost) | **POST** /api/v1/aiden/{aiden_id}/steps | Add Step
-[**createApiV1AidenPost**](AidenApi.md#createApiV1AidenPost) | **POST** /api/v1/aiden | Create
-[**deleteApiV1AidenAidenIdDelete**](AidenApi.md#deleteApiV1AidenAidenIdDelete) | **DELETE** /api/v1/aiden/{aiden_id} | Delete
-[**deleteStepApiV1AidenAidenIdStepsStepIdDelete**](AidenApi.md#deleteStepApiV1AidenAidenIdStepsStepIdDelete) | **DELETE** /api/v1/aiden/{aiden_id}/steps/{step_id} | Delete Step
-[**getApiV1AidenAidenIdGet**](AidenApi.md#getApiV1AidenAidenIdGet) | **GET** /api/v1/aiden/{aiden_id} | Get
-[**invokeApiV1AidenAidenIdInvokePost**](AidenApi.md#invokeApiV1AidenAidenIdInvokePost) | **POST** /api/v1/aiden/{aiden_id}/invoke | Invoke
-[**listApiV1AidenGet**](AidenApi.md#listApiV1AidenGet) | **GET** /api/v1/aiden | List
-[**listStepsApiV1AidenAidenIdStepsGet**](AidenApi.md#listStepsApiV1AidenAidenIdStepsGet) | **GET** /api/v1/aiden/{aiden_id}/steps | List Steps
-[**updateApiV1AidenAidenIdPatch**](AidenApi.md#updateApiV1AidenAidenIdPatch) | **PATCH** /api/v1/aiden/{aiden_id} | Update
+[**addAidenStep**](AidenApi.md#addAidenStep) | **POST** /api/v1/aiden/{aiden_id}/steps | Add Step
+[**createAiden**](AidenApi.md#createAiden) | **POST** /api/v1/aiden | Create
+[**deleteAiden**](AidenApi.md#deleteAiden) | **DELETE** /api/v1/aiden/{aiden_id} | Delete
+[**deleteAidenStep**](AidenApi.md#deleteAidenStep) | **DELETE** /api/v1/aiden/{aiden_id}/steps/{step_id} | Delete Step
+[**getAiden**](AidenApi.md#getAiden) | **GET** /api/v1/aiden/{aiden_id} | Get
+[**invokeAiden**](AidenApi.md#invokeAiden) | **POST** /api/v1/aiden/{aiden_id}/invoke | Invoke
+[**listAidenSteps**](AidenApi.md#listAidenSteps) | **GET** /api/v1/aiden/{aiden_id}/steps | List Steps
+[**listAidens**](AidenApi.md#listAidens) | **GET** /api/v1/aiden | List
+[**updateAiden**](AidenApi.md#updateAiden) | **PATCH** /api/v1/aiden/{aiden_id} | Update
 
-<a name="addStepApiV1AidenAidenIdStepsPost"></a>
-# **addStepApiV1AidenAidenIdStepsPost**
-> AppModelsResponseAiden addStepApiV1AidenAidenIdStepsPost(body, aidenId)
+<a name="addAidenStep"></a>
+# **addAidenStep**
+> AppModelsResponseAiden addAidenStep(body, aidenId)
 
 Add Step
 
@@ -32,7 +32,7 @@ let apiInstance = new Askaiden.AidenApi();
 let body = new Askaiden.AppModelsRequestAidenStep(); // AppModelsRequestAidenStep | 
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.addStepApiV1AidenAidenIdStepsPost(body, aidenId, (error, data, response) => {
+apiInstance.addAidenStep(body, aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -61,9 +61,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="createApiV1AidenPost"></a>
-# **createApiV1AidenPost**
-> AppModelsResponseAiden createApiV1AidenPost(body)
+<a name="createAiden"></a>
+# **createAiden**
+> AppModelsResponseAiden createAiden(body)
 
 Create
 
@@ -78,7 +78,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.AidenApi();
 let body = new Askaiden.AppModelsRequestAiden(); // AppModelsRequestAiden | 
 
-apiInstance.createApiV1AidenPost(body, (error, data, response) => {
+apiInstance.createAiden(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -106,9 +106,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteApiV1AidenAidenIdDelete"></a>
-# **deleteApiV1AidenAidenIdDelete**
-> Object deleteApiV1AidenAidenIdDelete(aidenId)
+<a name="deleteAiden"></a>
+# **deleteAiden**
+> Object deleteAiden(aidenId)
 
 Delete
 
@@ -123,7 +123,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.AidenApi();
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.deleteApiV1AidenAidenIdDelete(aidenId, (error, data, response) => {
+apiInstance.deleteAiden(aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -151,9 +151,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="deleteStepApiV1AidenAidenIdStepsStepIdDelete"></a>
-# **deleteStepApiV1AidenAidenIdStepsStepIdDelete**
-> Object deleteStepApiV1AidenAidenIdStepsStepIdDelete(aidenId, stepId)
+<a name="deleteAidenStep"></a>
+# **deleteAidenStep**
+> Object deleteAidenStep(aidenId, stepId)
 
 Delete Step
 
@@ -169,7 +169,7 @@ let apiInstance = new Askaiden.AidenApi();
 let aidenId = "aidenId_example"; // String | 
 let stepId = "stepId_example"; // String | 
 
-apiInstance.deleteStepApiV1AidenAidenIdStepsStepIdDelete(aidenId, stepId, (error, data, response) => {
+apiInstance.deleteAidenStep(aidenId, stepId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -198,9 +198,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getApiV1AidenAidenIdGet"></a>
-# **getApiV1AidenAidenIdGet**
-> AppModelsResponseAiden getApiV1AidenAidenIdGet(aidenId)
+<a name="getAiden"></a>
+# **getAiden**
+> AppModelsResponseAiden getAiden(aidenId)
 
 Get
 
@@ -215,7 +215,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.AidenApi();
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.getApiV1AidenAidenIdGet(aidenId, (error, data, response) => {
+apiInstance.getAiden(aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -243,9 +243,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="invokeApiV1AidenAidenIdInvokePost"></a>
-# **invokeApiV1AidenAidenIdInvokePost**
-> Object invokeApiV1AidenAidenIdInvokePost(body, aidenId)
+<a name="invokeAiden"></a>
+# **invokeAiden**
+> Object invokeAiden(body, aidenId)
 
 Invoke
 
@@ -261,7 +261,7 @@ let apiInstance = new Askaiden.AidenApi();
 let body = new Askaiden.AidenInvoke(); // AidenInvoke | 
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.invokeApiV1AidenAidenIdInvokePost(body, aidenId, (error, data, response) => {
+apiInstance.invokeAiden(body, aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -290,49 +290,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listApiV1AidenGet"></a>
-# **listApiV1AidenGet**
-> AidenList listApiV1AidenGet()
-
-List
-
-List all aiden
-
-### Example
-```javascript
-import {Askaiden} from 'askaiden';
-let defaultClient = Askaiden.ApiClient.instance;
-
-
-let apiInstance = new Askaiden.AidenApi();
-apiInstance.listApiV1AidenGet((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**AidenList**](AidenList.md)
-
-### Authorization
-
-[HTTPBearer](../README.md#HTTPBearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listStepsApiV1AidenAidenIdStepsGet"></a>
-# **listStepsApiV1AidenAidenIdStepsGet**
-> AidenList listStepsApiV1AidenAidenIdStepsGet(aidenId)
+<a name="listAidenSteps"></a>
+# **listAidenSteps**
+> AidenList listAidenSteps(aidenId)
 
 List Steps
 
@@ -347,7 +307,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.AidenApi();
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.listStepsApiV1AidenAidenIdStepsGet(aidenId, (error, data, response) => {
+apiInstance.listAidenSteps(aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -375,9 +335,49 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="updateApiV1AidenAidenIdPatch"></a>
-# **updateApiV1AidenAidenIdPatch**
-> AppModelsResponseAiden updateApiV1AidenAidenIdPatch(body, aidenId)
+<a name="listAidens"></a>
+# **listAidens**
+> AidenList listAidens()
+
+List
+
+List all aiden
+
+### Example
+```javascript
+import {Askaiden} from 'askaiden';
+let defaultClient = Askaiden.ApiClient.instance;
+
+
+let apiInstance = new Askaiden.AidenApi();
+apiInstance.listAidens((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**AidenList**](AidenList.md)
+
+### Authorization
+
+[HTTPBearer](../README.md#HTTPBearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="updateAiden"></a>
+# **updateAiden**
+> AppModelsResponseAiden updateAiden(body, aidenId)
 
 Update
 
@@ -393,7 +393,7 @@ let apiInstance = new Askaiden.AidenApi();
 let body = new Askaiden.AppModelsRequestAiden(); // AppModelsRequestAiden | 
 let aidenId = "aidenId_example"; // String | 
 
-apiInstance.updateApiV1AidenAidenIdPatch(body, aidenId, (error, data, response) => {
+apiInstance.updateAiden(body, aidenId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

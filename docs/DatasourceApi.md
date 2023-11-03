@@ -4,15 +4,15 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createApiV1DatasourcesPost**](DatasourceApi.md#createApiV1DatasourcesPost) | **POST** /api/v1/datasources | Create
-[**deleteApiV1DatasourcesDatasourceIdDelete**](DatasourceApi.md#deleteApiV1DatasourcesDatasourceIdDelete) | **DELETE** /api/v1/datasources/{datasource_id} | Delete
-[**getApiV1DatasourcesDatasourceIdGet**](DatasourceApi.md#getApiV1DatasourcesDatasourceIdGet) | **GET** /api/v1/datasources/{datasource_id} | Get
-[**listApiV1DatasourcesGet**](DatasourceApi.md#listApiV1DatasourcesGet) | **GET** /api/v1/datasources | List
-[**updateApiV1DatasourcesDatasourceIdPatch**](DatasourceApi.md#updateApiV1DatasourcesDatasourceIdPatch) | **PATCH** /api/v1/datasources/{datasource_id} | Update
+[**createDatasources**](DatasourceApi.md#createDatasources) | **POST** /api/v1/datasources | Create
+[**deleteDatasource**](DatasourceApi.md#deleteDatasource) | **DELETE** /api/v1/datasources/{datasource_id} | Delete
+[**getDatasource**](DatasourceApi.md#getDatasource) | **GET** /api/v1/datasources/{datasource_id} | Get
+[**listDatasources**](DatasourceApi.md#listDatasources) | **GET** /api/v1/datasources | List
+[**updateDatasource**](DatasourceApi.md#updateDatasource) | **PATCH** /api/v1/datasources/{datasource_id} | Update
 
-<a name="createApiV1DatasourcesPost"></a>
-# **createApiV1DatasourcesPost**
-> AppModelsResponseDatasource createApiV1DatasourcesPost(body)
+<a name="createDatasources"></a>
+# **createDatasources**
+> AppModelsResponseDatasource createDatasources(body)
 
 Create
 
@@ -27,7 +27,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.DatasourceApi();
 let body = new Askaiden.AppModelsRequestDatasource(); // AppModelsRequestDatasource | 
 
-apiInstance.createApiV1DatasourcesPost(body, (error, data, response) => {
+apiInstance.createDatasources(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -55,9 +55,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteApiV1DatasourcesDatasourceIdDelete"></a>
-# **deleteApiV1DatasourcesDatasourceIdDelete**
-> Object deleteApiV1DatasourcesDatasourceIdDelete(datasourceId)
+<a name="deleteDatasource"></a>
+# **deleteDatasource**
+> Object deleteDatasource(datasourceId)
 
 Delete
 
@@ -72,7 +72,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.DatasourceApi();
 let datasourceId = "datasourceId_example"; // String | 
 
-apiInstance.deleteApiV1DatasourcesDatasourceIdDelete(datasourceId, (error, data, response) => {
+apiInstance.deleteDatasource(datasourceId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -100,9 +100,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getApiV1DatasourcesDatasourceIdGet"></a>
-# **getApiV1DatasourcesDatasourceIdGet**
-> AppModelsResponseDatasource getApiV1DatasourcesDatasourceIdGet(datasourceId)
+<a name="getDatasource"></a>
+# **getDatasource**
+> AppModelsResponseDatasource getDatasource(datasourceId)
 
 Get
 
@@ -117,7 +117,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.DatasourceApi();
 let datasourceId = "datasourceId_example"; // String | 
 
-apiInstance.getApiV1DatasourcesDatasourceIdGet(datasourceId, (error, data, response) => {
+apiInstance.getDatasource(datasourceId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -145,9 +145,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listApiV1DatasourcesGet"></a>
-# **listApiV1DatasourcesGet**
-> DatasourceList listApiV1DatasourcesGet()
+<a name="listDatasources"></a>
+# **listDatasources**
+> DatasourceList listDatasources()
 
 List
 
@@ -160,7 +160,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 
 
 let apiInstance = new Askaiden.DatasourceApi();
-apiInstance.listApiV1DatasourcesGet((error, data, response) => {
+apiInstance.listDatasources((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -185,9 +185,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="updateApiV1DatasourcesDatasourceIdPatch"></a>
-# **updateApiV1DatasourcesDatasourceIdPatch**
-> AppModelsResponseDatasource updateApiV1DatasourcesDatasourceIdPatch(body, datasourceId)
+<a name="updateDatasource"></a>
+# **updateDatasource**
+> AppModelsResponseDatasource updateDatasource(body, datasourceId)
 
 Update
 
@@ -203,7 +203,7 @@ let apiInstance = new Askaiden.DatasourceApi();
 let body = new Askaiden.AppModelsRequestDatasource(); // AppModelsRequestDatasource | 
 let datasourceId = "datasourceId_example"; // String | 
 
-apiInstance.updateApiV1DatasourcesDatasourceIdPatch(body, datasourceId, (error, data, response) => {
+apiInstance.updateDatasource(body, datasourceId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

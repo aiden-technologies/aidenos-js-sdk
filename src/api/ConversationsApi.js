@@ -37,8 +37,8 @@ export class ConversationsApi {
     }
 
     /**
-     * Callback function to receive the result of the createApiV1ConversationsPost operation.
-     * @callback moduleapi/ConversationsApi~createApiV1ConversationsPostCallback
+     * Callback function to receive the result of the createConversations operation.
+     * @callback moduleapi/ConversationsApi~createConversationsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -50,15 +50,15 @@ export class ConversationsApi {
      * @param {module:model/ConversationCreation} body 
      * @param {Object} opts Optional parameters
      * @param {String} opts.locationId  (default to <.>)
-     * @param {module:api/ConversationsApi~createApiV1ConversationsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ConversationsApi~createConversationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1ConversationsPost(body, opts, callback) {
+    createConversations(body, opts, callback) {
       opts = opts || {};
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1ConversationsPost");
+        throw new Error("Missing the required parameter 'body' when calling createConversations");
       }
 
       let pathParams = {
@@ -86,8 +86,8 @@ export class ConversationsApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1ConversationsConversationIdDelete operation.
-     * @callback moduleapi/ConversationsApi~deleteApiV1ConversationsConversationIdDeleteCallback
+     * Callback function to receive the result of the deleteConversations operation.
+     * @callback moduleapi/ConversationsApi~deleteConversationsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -97,15 +97,15 @@ export class ConversationsApi {
      * Delete
      * Delete a conversation
      * @param {String} conversationId 
-     * @param {module:api/ConversationsApi~deleteApiV1ConversationsConversationIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ConversationsApi~deleteConversationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1ConversationsConversationIdDelete(conversationId, callback) {
+    deleteConversations(conversationId, callback) {
       
       let postBody = null;
       // verify the required parameter 'conversationId' is set
       if (conversationId === undefined || conversationId === null) {
-        throw new Error("Missing the required parameter 'conversationId' when calling deleteApiV1ConversationsConversationIdDelete");
+        throw new Error("Missing the required parameter 'conversationId' when calling deleteConversations");
       }
 
       let pathParams = {
@@ -133,55 +133,8 @@ export class ConversationsApi {
       );
     }
     /**
-     * Callback function to receive the result of the listApiV1ConversationsConversationIdMessagesGet operation.
-     * @callback moduleapi/ConversationsApi~listApiV1ConversationsConversationIdMessagesGetCallback
-     * @param {String} error Error message, if any.
-     * @param {Object{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List
-     * List all messages from a conversation
-     * @param {String} conversationId 
-     * @param {module:api/ConversationsApi~listApiV1ConversationsConversationIdMessagesGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    listApiV1ConversationsConversationIdMessagesGet(conversationId, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'conversationId' is set
-      if (conversationId === undefined || conversationId === null) {
-        throw new Error("Missing the required parameter 'conversationId' when calling listApiV1ConversationsConversationIdMessagesGet");
-      }
-
-      let pathParams = {
-        'conversationId': conversationId
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
-      let authNames = ['HTTPBearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = Object;
-
-      return this.apiClient.callApi(
-        '/api/v1/conversations/{conversationId}/messages', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the listApiV1ConversationsGet operation.
-     * @callback moduleapi/ConversationsApi~listApiV1ConversationsGetCallback
+     * Callback function to receive the result of the listConversations operation.
+     * @callback moduleapi/ConversationsApi~listConversationsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -190,10 +143,10 @@ export class ConversationsApi {
     /**
      * List
      * List all conversations
-     * @param {module:api/ConversationsApi~listApiV1ConversationsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ConversationsApi~listConversationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    listApiV1ConversationsGet(callback) {
+    listConversations(callback) {
       
       let postBody = null;
 
@@ -222,8 +175,55 @@ export class ConversationsApi {
       );
     }
     /**
-     * Callback function to receive the result of the updateApiV1ConversationsConversationIdPatch operation.
-     * @callback moduleapi/ConversationsApi~updateApiV1ConversationsConversationIdPatchCallback
+     * Callback function to receive the result of the listMessages operation.
+     * @callback moduleapi/ConversationsApi~listMessagesCallback
+     * @param {String} error Error message, if any.
+     * @param {Object{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List
+     * List all messages from a conversation
+     * @param {String} conversationId 
+     * @param {module:api/ConversationsApi~listMessagesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    listMessages(conversationId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'conversationId' is set
+      if (conversationId === undefined || conversationId === null) {
+        throw new Error("Missing the required parameter 'conversationId' when calling listMessages");
+      }
+
+      let pathParams = {
+        'conversationId': conversationId
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = ['HTTPBearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = Object;
+
+      return this.apiClient.callApi(
+        '/api/v1/conversations/{conversationId}/messages', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the updateConversations operation.
+     * @callback moduleapi/ConversationsApi~updateConversationsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -234,19 +234,19 @@ export class ConversationsApi {
      * Update a conversation
      * @param {module:model/ConversationDefinition} body 
      * @param {String} conversationId 
-     * @param {module:api/ConversationsApi~updateApiV1ConversationsConversationIdPatchCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ConversationsApi~updateConversationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    updateApiV1ConversationsConversationIdPatch(body, conversationId, callback) {
+    updateConversations(body, conversationId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling updateApiV1ConversationsConversationIdPatch");
+        throw new Error("Missing the required parameter 'body' when calling updateConversations");
       }
       // verify the required parameter 'conversationId' is set
       if (conversationId === undefined || conversationId === null) {
-        throw new Error("Missing the required parameter 'conversationId' when calling updateApiV1ConversationsConversationIdPatch");
+        throw new Error("Missing the required parameter 'conversationId' when calling updateConversations");
       }
 
       let pathParams = {

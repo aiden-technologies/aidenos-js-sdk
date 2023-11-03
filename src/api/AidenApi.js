@@ -40,8 +40,8 @@ export class AidenApi {
     }
 
     /**
-     * Callback function to receive the result of the addStepApiV1AidenAidenIdStepsPost operation.
-     * @callback moduleapi/AidenApi~addStepApiV1AidenAidenIdStepsPostCallback
+     * Callback function to receive the result of the addAidenStep operation.
+     * @callback moduleapi/AidenApi~addAidenStepCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseAiden{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -52,19 +52,19 @@ export class AidenApi {
      * Create a new aiden step
      * @param {module:model/AppModelsRequestAidenStep} body 
      * @param {String} aidenId 
-     * @param {module:api/AidenApi~addStepApiV1AidenAidenIdStepsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~addAidenStepCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    addStepApiV1AidenAidenIdStepsPost(body, aidenId, callback) {
+    addAidenStep(body, aidenId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling addStepApiV1AidenAidenIdStepsPost");
+        throw new Error("Missing the required parameter 'body' when calling addAidenStep");
       }
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling addStepApiV1AidenAidenIdStepsPost");
+        throw new Error("Missing the required parameter 'aidenId' when calling addAidenStep");
       }
 
       let pathParams = {
@@ -92,8 +92,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the createApiV1AidenPost operation.
-     * @callback moduleapi/AidenApi~createApiV1AidenPostCallback
+     * Callback function to receive the result of the createAiden operation.
+     * @callback moduleapi/AidenApi~createAidenCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseAiden{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -103,15 +103,15 @@ export class AidenApi {
      * Create
      * Create a new aiden
      * @param {module:model/AppModelsRequestAiden} body 
-     * @param {module:api/AidenApi~createApiV1AidenPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~createAidenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1AidenPost(body, callback) {
+    createAiden(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1AidenPost");
+        throw new Error("Missing the required parameter 'body' when calling createAiden");
       }
 
       let pathParams = {
@@ -139,8 +139,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1AidenAidenIdDelete operation.
-     * @callback moduleapi/AidenApi~deleteApiV1AidenAidenIdDeleteCallback
+     * Callback function to receive the result of the deleteAiden operation.
+     * @callback moduleapi/AidenApi~deleteAidenCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -150,15 +150,15 @@ export class AidenApi {
      * Delete
      * Delete a specific aiden
      * @param {String} aidenId 
-     * @param {module:api/AidenApi~deleteApiV1AidenAidenIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~deleteAidenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1AidenAidenIdDelete(aidenId, callback) {
+    deleteAiden(aidenId, callback) {
       
       let postBody = null;
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling deleteApiV1AidenAidenIdDelete");
+        throw new Error("Missing the required parameter 'aidenId' when calling deleteAiden");
       }
 
       let pathParams = {
@@ -186,8 +186,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteStepApiV1AidenAidenIdStepsStepIdDelete operation.
-     * @callback moduleapi/AidenApi~deleteStepApiV1AidenAidenIdStepsStepIdDeleteCallback
+     * Callback function to receive the result of the deleteAidenStep operation.
+     * @callback moduleapi/AidenApi~deleteAidenStepCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -198,19 +198,19 @@ export class AidenApi {
      * Delete a specific aiden step
      * @param {String} aidenId 
      * @param {String} stepId 
-     * @param {module:api/AidenApi~deleteStepApiV1AidenAidenIdStepsStepIdDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~deleteAidenStepCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteStepApiV1AidenAidenIdStepsStepIdDelete(aidenId, stepId, callback) {
+    deleteAidenStep(aidenId, stepId, callback) {
       
       let postBody = null;
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling deleteStepApiV1AidenAidenIdStepsStepIdDelete");
+        throw new Error("Missing the required parameter 'aidenId' when calling deleteAidenStep");
       }
       // verify the required parameter 'stepId' is set
       if (stepId === undefined || stepId === null) {
-        throw new Error("Missing the required parameter 'stepId' when calling deleteStepApiV1AidenAidenIdStepsStepIdDelete");
+        throw new Error("Missing the required parameter 'stepId' when calling deleteAidenStep");
       }
 
       let pathParams = {
@@ -238,8 +238,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the getApiV1AidenAidenIdGet operation.
-     * @callback moduleapi/AidenApi~getApiV1AidenAidenIdGetCallback
+     * Callback function to receive the result of the getAiden operation.
+     * @callback moduleapi/AidenApi~getAidenCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseAiden{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -249,15 +249,15 @@ export class AidenApi {
      * Get
      * Get a single aiden
      * @param {String} aidenId 
-     * @param {module:api/AidenApi~getApiV1AidenAidenIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~getAidenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getApiV1AidenAidenIdGet(aidenId, callback) {
+    getAiden(aidenId, callback) {
       
       let postBody = null;
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling getApiV1AidenAidenIdGet");
+        throw new Error("Missing the required parameter 'aidenId' when calling getAiden");
       }
 
       let pathParams = {
@@ -285,8 +285,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the invokeApiV1AidenAidenIdInvokePost operation.
-     * @callback moduleapi/AidenApi~invokeApiV1AidenAidenIdInvokePostCallback
+     * Callback function to receive the result of the invokeAiden operation.
+     * @callback moduleapi/AidenApi~invokeAidenCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -297,19 +297,19 @@ export class AidenApi {
      * Invoke a specific aiden
      * @param {module:model/AidenInvoke} body 
      * @param {String} aidenId 
-     * @param {module:api/AidenApi~invokeApiV1AidenAidenIdInvokePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~invokeAidenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    invokeApiV1AidenAidenIdInvokePost(body, aidenId, callback) {
+    invokeAiden(body, aidenId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling invokeApiV1AidenAidenIdInvokePost");
+        throw new Error("Missing the required parameter 'body' when calling invokeAiden");
       }
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling invokeApiV1AidenAidenIdInvokePost");
+        throw new Error("Missing the required parameter 'aidenId' when calling invokeAiden");
       }
 
       let pathParams = {
@@ -337,8 +337,55 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the listApiV1AidenGet operation.
-     * @callback moduleapi/AidenApi~listApiV1AidenGetCallback
+     * Callback function to receive the result of the listAidenSteps operation.
+     * @callback moduleapi/AidenApi~listAidenStepsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/AidenList{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List Steps
+     * List all steps of a aiden
+     * @param {String} aidenId 
+     * @param {module:api/AidenApi~listAidenStepsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    listAidenSteps(aidenId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'aidenId' is set
+      if (aidenId === undefined || aidenId === null) {
+        throw new Error("Missing the required parameter 'aidenId' when calling listAidenSteps");
+      }
+
+      let pathParams = {
+        'aiden_id': aidenId
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = ['HTTPBearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = AidenList;
+
+      return this.apiClient.callApi(
+        '/api/v1/aiden/{aiden_id}/steps', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the listAidens operation.
+     * @callback moduleapi/AidenApi~listAidensCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AidenList{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -347,10 +394,10 @@ export class AidenApi {
     /**
      * List
      * List all aiden
-     * @param {module:api/AidenApi~listApiV1AidenGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~listAidensCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    listApiV1AidenGet(callback) {
+    listAidens(callback) {
       
       let postBody = null;
 
@@ -379,55 +426,8 @@ export class AidenApi {
       );
     }
     /**
-     * Callback function to receive the result of the listStepsApiV1AidenAidenIdStepsGet operation.
-     * @callback moduleapi/AidenApi~listStepsApiV1AidenAidenIdStepsGetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/AidenList{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List Steps
-     * List all steps of a aiden
-     * @param {String} aidenId 
-     * @param {module:api/AidenApi~listStepsApiV1AidenAidenIdStepsGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    listStepsApiV1AidenAidenIdStepsGet(aidenId, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'aidenId' is set
-      if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling listStepsApiV1AidenAidenIdStepsGet");
-      }
-
-      let pathParams = {
-        'aiden_id': aidenId
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
-      let authNames = ['HTTPBearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = AidenList;
-
-      return this.apiClient.callApi(
-        '/api/v1/aiden/{aiden_id}/steps', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the updateApiV1AidenAidenIdPatch operation.
-     * @callback moduleapi/AidenApi~updateApiV1AidenAidenIdPatchCallback
+     * Callback function to receive the result of the updateAiden operation.
+     * @callback moduleapi/AidenApi~updateAidenCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseAiden{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -438,19 +438,19 @@ export class AidenApi {
      * Patch a aiden
      * @param {module:model/AppModelsRequestAiden} body 
      * @param {String} aidenId 
-     * @param {module:api/AidenApi~updateApiV1AidenAidenIdPatchCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AidenApi~updateAidenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    updateApiV1AidenAidenIdPatch(body, aidenId, callback) {
+    updateAiden(body, aidenId, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling updateApiV1AidenAidenIdPatch");
+        throw new Error("Missing the required parameter 'body' when calling updateAiden");
       }
       // verify the required parameter 'aidenId' is set
       if (aidenId === undefined || aidenId === null) {
-        throw new Error("Missing the required parameter 'aidenId' when calling updateApiV1AidenAidenIdPatch");
+        throw new Error("Missing the required parameter 'aidenId' when calling updateAiden");
       }
 
       let pathParams = {

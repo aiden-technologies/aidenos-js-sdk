@@ -83,7 +83,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.addStepApiV1AidenAidenIdStepsPost(body, aidenId, callback);
+api.addAidenStep(body, aidenId, callback);
 ```
 
 ## Documentation for API Endpoints
@@ -92,47 +92,47 @@ All URIs are relative to */*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*Askaiden.AidenApi* | [**addStepApiV1AidenAidenIdStepsPost**](docs/AidenApi.md#addStepApiV1AidenAidenIdStepsPost) | **POST** /api/v1/aiden/{aiden_id}/steps | Add Step
-*Askaiden.AidenApi* | [**createApiV1AidenPost**](docs/AidenApi.md#createApiV1AidenPost) | **POST** /api/v1/aiden | Create
-*Askaiden.AidenApi* | [**deleteApiV1AidenAidenIdDelete**](docs/AidenApi.md#deleteApiV1AidenAidenIdDelete) | **DELETE** /api/v1/aiden/{aiden_id} | Delete
-*Askaiden.AidenApi* | [**deleteStepApiV1AidenAidenIdStepsStepIdDelete**](docs/AidenApi.md#deleteStepApiV1AidenAidenIdStepsStepIdDelete) | **DELETE** /api/v1/aiden/{aiden_id}/steps/{step_id} | Delete Step
-*Askaiden.AidenApi* | [**getApiV1AidenAidenIdGet**](docs/AidenApi.md#getApiV1AidenAidenIdGet) | **GET** /api/v1/aiden/{aiden_id} | Get
-*Askaiden.AidenApi* | [**invokeApiV1AidenAidenIdInvokePost**](docs/AidenApi.md#invokeApiV1AidenAidenIdInvokePost) | **POST** /api/v1/aiden/{aiden_id}/invoke | Invoke
-*Askaiden.AidenApi* | [**listApiV1AidenGet**](docs/AidenApi.md#listApiV1AidenGet) | **GET** /api/v1/aiden | List
-*Askaiden.AidenApi* | [**listStepsApiV1AidenAidenIdStepsGet**](docs/AidenApi.md#listStepsApiV1AidenAidenIdStepsGet) | **GET** /api/v1/aiden/{aiden_id}/steps | List Steps
-*Askaiden.AidenApi* | [**updateApiV1AidenAidenIdPatch**](docs/AidenApi.md#updateApiV1AidenAidenIdPatch) | **PATCH** /api/v1/aiden/{aiden_id} | Update
-*Askaiden.ConversationsApi* | [**createApiV1ConversationsPost**](docs/ConversationsApi.md#createApiV1ConversationsPost) | **POST** /api/v1/conversations | Create
-*Askaiden.ConversationsApi* | [**deleteApiV1ConversationsConversationIdDelete**](docs/ConversationsApi.md#deleteApiV1ConversationsConversationIdDelete) | **DELETE** /api/v1/conversations/{conversationId} | Delete
-*Askaiden.ConversationsApi* | [**listApiV1ConversationsConversationIdMessagesGet**](docs/ConversationsApi.md#listApiV1ConversationsConversationIdMessagesGet) | **GET** /api/v1/conversations/{conversationId}/messages | List
-*Askaiden.ConversationsApi* | [**listApiV1ConversationsGet**](docs/ConversationsApi.md#listApiV1ConversationsGet) | **GET** /api/v1/conversations | List
-*Askaiden.ConversationsApi* | [**updateApiV1ConversationsConversationIdPatch**](docs/ConversationsApi.md#updateApiV1ConversationsConversationIdPatch) | **PATCH** /api/v1/conversations/{conversationId} | Update
-*Askaiden.DatasourceApi* | [**createApiV1DatasourcesPost**](docs/DatasourceApi.md#createApiV1DatasourcesPost) | **POST** /api/v1/datasources | Create
-*Askaiden.DatasourceApi* | [**deleteApiV1DatasourcesDatasourceIdDelete**](docs/DatasourceApi.md#deleteApiV1DatasourcesDatasourceIdDelete) | **DELETE** /api/v1/datasources/{datasource_id} | Delete
-*Askaiden.DatasourceApi* | [**getApiV1DatasourcesDatasourceIdGet**](docs/DatasourceApi.md#getApiV1DatasourcesDatasourceIdGet) | **GET** /api/v1/datasources/{datasource_id} | Get
-*Askaiden.DatasourceApi* | [**listApiV1DatasourcesGet**](docs/DatasourceApi.md#listApiV1DatasourcesGet) | **GET** /api/v1/datasources | List
-*Askaiden.DatasourceApi* | [**updateApiV1DatasourcesDatasourceIdPatch**](docs/DatasourceApi.md#updateApiV1DatasourcesDatasourceIdPatch) | **PATCH** /api/v1/datasources/{datasource_id} | Update
-*Askaiden.SkillsApi* | [**addDatasourceApiV1SkillsSkillIdDatasourcesPost**](docs/SkillsApi.md#addDatasourceApiV1SkillsSkillIdDatasourcesPost) | **POST** /api/v1/skills/{skill_id}/datasources | Add Datasource
-*Askaiden.SkillsApi* | [**addToolApiV1SkillsSkillIdToolsPost**](docs/SkillsApi.md#addToolApiV1SkillsSkillIdToolsPost) | **POST** /api/v1/skills/{skill_id}/tools | Add Tool
-*Askaiden.SkillsApi* | [**createApiV1SkillsPost**](docs/SkillsApi.md#createApiV1SkillsPost) | **POST** /api/v1/skills | Create
-*Askaiden.SkillsApi* | [**deleteApiV1SkillsSkillIdDelete**](docs/SkillsApi.md#deleteApiV1SkillsSkillIdDelete) | **DELETE** /api/v1/skills/{skill_id} | Delete
-*Askaiden.SkillsApi* | [**getApiV1SkillsSkillIdGet**](docs/SkillsApi.md#getApiV1SkillsSkillIdGet) | **GET** /api/v1/skills/{skill_id} | Get
-*Askaiden.SkillsApi* | [**invokeApiV1SkillsSkillIdInvokePost**](docs/SkillsApi.md#invokeApiV1SkillsSkillIdInvokePost) | **POST** /api/v1/skills/{skill_id}/invoke | Invoke
-*Askaiden.SkillsApi* | [**listApiV1SkillsGet**](docs/SkillsApi.md#listApiV1SkillsGet) | **GET** /api/v1/skills | List
-*Askaiden.SkillsApi* | [**listDatasourcesApiV1SkillsSkillIdDatasourcesGet**](docs/SkillsApi.md#listDatasourcesApiV1SkillsSkillIdDatasourcesGet) | **GET** /api/v1/skills/{skill_id}/datasources | List Datasources
-*Askaiden.SkillsApi* | [**listRunsApiV1SkillsSkillIdRunsGet**](docs/SkillsApi.md#listRunsApiV1SkillsSkillIdRunsGet) | **GET** /api/v1/skills/{skill_id}/runs | List Runs
-*Askaiden.SkillsApi* | [**listToolsApiV1SkillsSkillIdToolsGet**](docs/SkillsApi.md#listToolsApiV1SkillsSkillIdToolsGet) | **GET** /api/v1/skills/{skill_id}/tools | List Tools
-*Askaiden.SkillsApi* | [**removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete**](docs/SkillsApi.md#removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete) | **DELETE** /api/v1/skills/{skill_id}/datasources/{datasource_id} | Remove Datasource
-*Askaiden.SkillsApi* | [**removeToolApiV1SkillsSkillIdToolsToolIdDelete**](docs/SkillsApi.md#removeToolApiV1SkillsSkillIdToolsToolIdDelete) | **DELETE** /api/v1/skills/{skill_id}/tools/{tool_id} | Remove Tool
-*Askaiden.SkillsApi* | [**updateApiV1SkillsSkillIdPatch**](docs/SkillsApi.md#updateApiV1SkillsSkillIdPatch) | **PATCH** /api/v1/skills/{skill_id} | Update
-*Askaiden.ToolApi* | [**createApiV1ToolsPost**](docs/ToolApi.md#createApiV1ToolsPost) | **POST** /api/v1/tools | Create
-*Askaiden.ToolApi* | [**deleteApiV1ToolsToolIdDelete**](docs/ToolApi.md#deleteApiV1ToolsToolIdDelete) | **DELETE** /api/v1/tools/{tool_id} | Delete
+*Askaiden.AidenApi* | [**addAidenStep**](docs/AidenApi.md#addAidenStep) | **POST** /api/v1/aiden/{aiden_id}/steps | Add Step
+*Askaiden.AidenApi* | [**createAiden**](docs/AidenApi.md#createAiden) | **POST** /api/v1/aiden | Create
+*Askaiden.AidenApi* | [**deleteAiden**](docs/AidenApi.md#deleteAiden) | **DELETE** /api/v1/aiden/{aiden_id} | Delete
+*Askaiden.AidenApi* | [**deleteAidenStep**](docs/AidenApi.md#deleteAidenStep) | **DELETE** /api/v1/aiden/{aiden_id}/steps/{step_id} | Delete Step
+*Askaiden.AidenApi* | [**getAiden**](docs/AidenApi.md#getAiden) | **GET** /api/v1/aiden/{aiden_id} | Get
+*Askaiden.AidenApi* | [**invokeAiden**](docs/AidenApi.md#invokeAiden) | **POST** /api/v1/aiden/{aiden_id}/invoke | Invoke
+*Askaiden.AidenApi* | [**listAidenSteps**](docs/AidenApi.md#listAidenSteps) | **GET** /api/v1/aiden/{aiden_id}/steps | List Steps
+*Askaiden.AidenApi* | [**listAidens**](docs/AidenApi.md#listAidens) | **GET** /api/v1/aiden | List
+*Askaiden.AidenApi* | [**updateAiden**](docs/AidenApi.md#updateAiden) | **PATCH** /api/v1/aiden/{aiden_id} | Update
+*Askaiden.ConversationsApi* | [**createConversations**](docs/ConversationsApi.md#createConversations) | **POST** /api/v1/conversations | Create
+*Askaiden.ConversationsApi* | [**deleteConversations**](docs/ConversationsApi.md#deleteConversations) | **DELETE** /api/v1/conversations/{conversationId} | Delete
+*Askaiden.ConversationsApi* | [**listConversations**](docs/ConversationsApi.md#listConversations) | **GET** /api/v1/conversations | List
+*Askaiden.ConversationsApi* | [**listMessages**](docs/ConversationsApi.md#listMessages) | **GET** /api/v1/conversations/{conversationId}/messages | List
+*Askaiden.ConversationsApi* | [**updateConversations**](docs/ConversationsApi.md#updateConversations) | **PATCH** /api/v1/conversations/{conversationId} | Update
+*Askaiden.DatasourceApi* | [**createDatasources**](docs/DatasourceApi.md#createDatasources) | **POST** /api/v1/datasources | Create
+*Askaiden.DatasourceApi* | [**deleteDatasource**](docs/DatasourceApi.md#deleteDatasource) | **DELETE** /api/v1/datasources/{datasource_id} | Delete
+*Askaiden.DatasourceApi* | [**getDatasource**](docs/DatasourceApi.md#getDatasource) | **GET** /api/v1/datasources/{datasource_id} | Get
+*Askaiden.DatasourceApi* | [**listDatasources**](docs/DatasourceApi.md#listDatasources) | **GET** /api/v1/datasources | List
+*Askaiden.DatasourceApi* | [**updateDatasource**](docs/DatasourceApi.md#updateDatasource) | **PATCH** /api/v1/datasources/{datasource_id} | Update
+*Askaiden.SkillsApi* | [**addDatasource**](docs/SkillsApi.md#addDatasource) | **POST** /api/v1/skills/{skill_id}/datasources | Add Datasource
+*Askaiden.SkillsApi* | [**addSkillTool**](docs/SkillsApi.md#addSkillTool) | **POST** /api/v1/skills/{skill_id}/tools | Add Tool
+*Askaiden.SkillsApi* | [**createSkill**](docs/SkillsApi.md#createSkill) | **POST** /api/v1/skills | Create
+*Askaiden.SkillsApi* | [**deleteSkill**](docs/SkillsApi.md#deleteSkill) | **DELETE** /api/v1/skills/{skill_id} | Delete
+*Askaiden.SkillsApi* | [**getSkill**](docs/SkillsApi.md#getSkill) | **GET** /api/v1/skills/{skill_id} | Get
+*Askaiden.SkillsApi* | [**invokeSkill**](docs/SkillsApi.md#invokeSkill) | **POST** /api/v1/skills/{skill_id}/invoke | Invoke
+*Askaiden.SkillsApi* | [**listRuns**](docs/SkillsApi.md#listRuns) | **GET** /api/v1/skills/{skill_id}/runs | List Runs
+*Askaiden.SkillsApi* | [**listSkillDatasources**](docs/SkillsApi.md#listSkillDatasources) | **GET** /api/v1/skills/{skill_id}/datasources | List Datasources
+*Askaiden.SkillsApi* | [**listSkillTools**](docs/SkillsApi.md#listSkillTools) | **GET** /api/v1/skills/{skill_id}/tools | List Tools
+*Askaiden.SkillsApi* | [**listSkills**](docs/SkillsApi.md#listSkills) | **GET** /api/v1/skills | List
+*Askaiden.SkillsApi* | [**removeDatasource**](docs/SkillsApi.md#removeDatasource) | **DELETE** /api/v1/skills/{skill_id}/datasources/{datasource_id} | Remove Datasource
+*Askaiden.SkillsApi* | [**removeTool**](docs/SkillsApi.md#removeTool) | **DELETE** /api/v1/skills/{skill_id}/tools/{tool_id} | Remove Tool
+*Askaiden.SkillsApi* | [**updateSkill**](docs/SkillsApi.md#updateSkill) | **PATCH** /api/v1/skills/{skill_id} | Update
+*Askaiden.ToolApi* | [**createTools**](docs/ToolApi.md#createTools) | **POST** /api/v1/tools | Create
+*Askaiden.ToolApi* | [**deleteTool**](docs/ToolApi.md#deleteTool) | **DELETE** /api/v1/tools/{tool_id} | Delete
 *Askaiden.ToolApi* | [**getApiV1ToolsToolIdGet**](docs/ToolApi.md#getApiV1ToolsToolIdGet) | **GET** /api/v1/tools/{tool_id} | Get
-*Askaiden.ToolApi* | [**listApiV1ToolsGet**](docs/ToolApi.md#listApiV1ToolsGet) | **GET** /api/v1/tools | List
+*Askaiden.ToolApi* | [**listTools**](docs/ToolApi.md#listTools) | **GET** /api/v1/tools | List
 *Askaiden.ToolApi* | [**updateApiV1ToolsToolIdPatch**](docs/ToolApi.md#updateApiV1ToolsToolIdPatch) | **PATCH** /api/v1/tools/{tool_id} | Update
-*Askaiden.UsersApi* | [**createApiV1UserPost**](docs/UsersApi.md#createApiV1UserPost) | **POST** /api/v1/user | Create
-*Askaiden.UsersApi* | [**deleteApiV1UserDelete**](docs/UsersApi.md#deleteApiV1UserDelete) | **DELETE** /api/v1/user | Delete
-*Askaiden.UsersApi* | [**getApiV1UserGet**](docs/UsersApi.md#getApiV1UserGet) | **GET** /api/v1/user | Get
-*Askaiden.UsersApi* | [**updateApiV1UserPatch**](docs/UsersApi.md#updateApiV1UserPatch) | **PATCH** /api/v1/user | Update
+*Askaiden.UsersApi* | [**createUser**](docs/UsersApi.md#createUser) | **POST** /api/v1/user | Create
+*Askaiden.UsersApi* | [**deleteUser**](docs/UsersApi.md#deleteUser) | **DELETE** /api/v1/user | Delete
+*Askaiden.UsersApi* | [**getUser**](docs/UsersApi.md#getUser) | **GET** /api/v1/user | Get
+*Askaiden.UsersApi* | [**updateUser**](docs/UsersApi.md#updateUser) | **PATCH** /api/v1/user | Update
 
 ## Documentation for Models
 

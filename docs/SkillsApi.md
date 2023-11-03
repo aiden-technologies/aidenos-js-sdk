@@ -4,23 +4,23 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addDatasourceApiV1SkillsSkillIdDatasourcesPost**](SkillsApi.md#addDatasourceApiV1SkillsSkillIdDatasourcesPost) | **POST** /api/v1/skills/{skill_id}/datasources | Add Datasource
-[**addToolApiV1SkillsSkillIdToolsPost**](SkillsApi.md#addToolApiV1SkillsSkillIdToolsPost) | **POST** /api/v1/skills/{skill_id}/tools | Add Tool
-[**createApiV1SkillsPost**](SkillsApi.md#createApiV1SkillsPost) | **POST** /api/v1/skills | Create
-[**deleteApiV1SkillsSkillIdDelete**](SkillsApi.md#deleteApiV1SkillsSkillIdDelete) | **DELETE** /api/v1/skills/{skill_id} | Delete
-[**getApiV1SkillsSkillIdGet**](SkillsApi.md#getApiV1SkillsSkillIdGet) | **GET** /api/v1/skills/{skill_id} | Get
-[**invokeApiV1SkillsSkillIdInvokePost**](SkillsApi.md#invokeApiV1SkillsSkillIdInvokePost) | **POST** /api/v1/skills/{skill_id}/invoke | Invoke
-[**listApiV1SkillsGet**](SkillsApi.md#listApiV1SkillsGet) | **GET** /api/v1/skills | List
-[**listDatasourcesApiV1SkillsSkillIdDatasourcesGet**](SkillsApi.md#listDatasourcesApiV1SkillsSkillIdDatasourcesGet) | **GET** /api/v1/skills/{skill_id}/datasources | List Datasources
-[**listRunsApiV1SkillsSkillIdRunsGet**](SkillsApi.md#listRunsApiV1SkillsSkillIdRunsGet) | **GET** /api/v1/skills/{skill_id}/runs | List Runs
-[**listToolsApiV1SkillsSkillIdToolsGet**](SkillsApi.md#listToolsApiV1SkillsSkillIdToolsGet) | **GET** /api/v1/skills/{skill_id}/tools | List Tools
-[**removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete**](SkillsApi.md#removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete) | **DELETE** /api/v1/skills/{skill_id}/datasources/{datasource_id} | Remove Datasource
-[**removeToolApiV1SkillsSkillIdToolsToolIdDelete**](SkillsApi.md#removeToolApiV1SkillsSkillIdToolsToolIdDelete) | **DELETE** /api/v1/skills/{skill_id}/tools/{tool_id} | Remove Tool
-[**updateApiV1SkillsSkillIdPatch**](SkillsApi.md#updateApiV1SkillsSkillIdPatch) | **PATCH** /api/v1/skills/{skill_id} | Update
+[**addDatasource**](SkillsApi.md#addDatasource) | **POST** /api/v1/skills/{skill_id}/datasources | Add Datasource
+[**addSkillTool**](SkillsApi.md#addSkillTool) | **POST** /api/v1/skills/{skill_id}/tools | Add Tool
+[**createSkill**](SkillsApi.md#createSkill) | **POST** /api/v1/skills | Create
+[**deleteSkill**](SkillsApi.md#deleteSkill) | **DELETE** /api/v1/skills/{skill_id} | Delete
+[**getSkill**](SkillsApi.md#getSkill) | **GET** /api/v1/skills/{skill_id} | Get
+[**invokeSkill**](SkillsApi.md#invokeSkill) | **POST** /api/v1/skills/{skill_id}/invoke | Invoke
+[**listRuns**](SkillsApi.md#listRuns) | **GET** /api/v1/skills/{skill_id}/runs | List Runs
+[**listSkillDatasources**](SkillsApi.md#listSkillDatasources) | **GET** /api/v1/skills/{skill_id}/datasources | List Datasources
+[**listSkillTools**](SkillsApi.md#listSkillTools) | **GET** /api/v1/skills/{skill_id}/tools | List Tools
+[**listSkills**](SkillsApi.md#listSkills) | **GET** /api/v1/skills | List
+[**removeDatasource**](SkillsApi.md#removeDatasource) | **DELETE** /api/v1/skills/{skill_id}/datasources/{datasource_id} | Remove Datasource
+[**removeTool**](SkillsApi.md#removeTool) | **DELETE** /api/v1/skills/{skill_id}/tools/{tool_id} | Remove Tool
+[**updateSkill**](SkillsApi.md#updateSkill) | **PATCH** /api/v1/skills/{skill_id} | Update
 
-<a name="addDatasourceApiV1SkillsSkillIdDatasourcesPost"></a>
-# **addDatasourceApiV1SkillsSkillIdDatasourcesPost**
-> AppModelsResponseSkill addDatasourceApiV1SkillsSkillIdDatasourcesPost(body, skillId)
+<a name="addDatasource"></a>
+# **addDatasource**
+> AppModelsResponseSkill addDatasource(body, skillId)
 
 Add Datasource
 
@@ -36,7 +36,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let body = new Askaiden.AppModelsRequestSkillDatasource(); // AppModelsRequestSkillDatasource | 
 let skillId = "skillId_example"; // String | 
 
-apiInstance.addDatasourceApiV1SkillsSkillIdDatasourcesPost(body, skillId, (error, data, response) => {
+apiInstance.addDatasource(body, skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -65,9 +65,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="addToolApiV1SkillsSkillIdToolsPost"></a>
-# **addToolApiV1SkillsSkillIdToolsPost**
-> AppModelsResponseSkill addToolApiV1SkillsSkillIdToolsPost(body, skillId)
+<a name="addSkillTool"></a>
+# **addSkillTool**
+> AppModelsResponseSkill addSkillTool(body, skillId)
 
 Add Tool
 
@@ -83,7 +83,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let body = new Askaiden.AppModelsRequestSkillTool(); // AppModelsRequestSkillTool | 
 let skillId = "skillId_example"; // String | 
 
-apiInstance.addToolApiV1SkillsSkillIdToolsPost(body, skillId, (error, data, response) => {
+apiInstance.addSkillTool(body, skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -112,9 +112,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="createApiV1SkillsPost"></a>
-# **createApiV1SkillsPost**
-> AppModelsResponseSkill createApiV1SkillsPost(body)
+<a name="createSkill"></a>
+# **createSkill**
+> AppModelsResponseSkill createSkill(body)
 
 Create
 
@@ -129,7 +129,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.SkillsApi();
 let body = new Askaiden.AppModelsRequestSkill(); // AppModelsRequestSkill | 
 
-apiInstance.createApiV1SkillsPost(body, (error, data, response) => {
+apiInstance.createSkill(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -157,9 +157,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteApiV1SkillsSkillIdDelete"></a>
-# **deleteApiV1SkillsSkillIdDelete**
-> Object deleteApiV1SkillsSkillIdDelete(skillId)
+<a name="deleteSkill"></a>
+# **deleteSkill**
+> Object deleteSkill(skillId)
 
 Delete
 
@@ -174,7 +174,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 
-apiInstance.deleteApiV1SkillsSkillIdDelete(skillId, (error, data, response) => {
+apiInstance.deleteSkill(skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -202,9 +202,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getApiV1SkillsSkillIdGet"></a>
-# **getApiV1SkillsSkillIdGet**
-> AppModelsResponseSkill getApiV1SkillsSkillIdGet(skillId)
+<a name="getSkill"></a>
+# **getSkill**
+> AppModelsResponseSkill getSkill(skillId)
 
 Get
 
@@ -219,7 +219,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 
-apiInstance.getApiV1SkillsSkillIdGet(skillId, (error, data, response) => {
+apiInstance.getSkill(skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -247,9 +247,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="invokeApiV1SkillsSkillIdInvokePost"></a>
-# **invokeApiV1SkillsSkillIdInvokePost**
-> AppModelsResponseSkillInvoke invokeApiV1SkillsSkillIdInvokePost(body, skillId)
+<a name="invokeSkill"></a>
+# **invokeSkill**
+> AppModelsResponseSkillInvoke invokeSkill(body, skillId)
 
 Invoke
 
@@ -265,7 +265,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let body = new Askaiden.AppModelsRequestSkillInvoke(); // AppModelsRequestSkillInvoke | 
 let skillId = "skillId_example"; // String | 
 
-apiInstance.invokeApiV1SkillsSkillIdInvokePost(body, skillId, (error, data, response) => {
+apiInstance.invokeSkill(body, skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -294,94 +294,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listApiV1SkillsGet"></a>
-# **listApiV1SkillsGet**
-> SkillList listApiV1SkillsGet()
-
-List
-
-List all skills
-
-### Example
-```javascript
-import {Askaiden} from 'askaiden';
-let defaultClient = Askaiden.ApiClient.instance;
-
-
-let apiInstance = new Askaiden.SkillsApi();
-apiInstance.listApiV1SkillsGet((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SkillList**](SkillList.md)
-
-### Authorization
-
-[HTTPBearer](../README.md#HTTPBearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listDatasourcesApiV1SkillsSkillIdDatasourcesGet"></a>
-# **listDatasourcesApiV1SkillsSkillIdDatasourcesGet**
-> SkillDatasosurceList listDatasourcesApiV1SkillsSkillIdDatasourcesGet(skillId)
-
-List Datasources
-
-List skill datasources
-
-### Example
-```javascript
-import {Askaiden} from 'askaiden';
-let defaultClient = Askaiden.ApiClient.instance;
-
-
-let apiInstance = new Askaiden.SkillsApi();
-let skillId = "skillId_example"; // String | 
-
-apiInstance.listDatasourcesApiV1SkillsSkillIdDatasourcesGet(skillId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **skillId** | **String**|  | 
-
-### Return type
-
-[**SkillDatasosurceList**](SkillDatasosurceList.md)
-
-### Authorization
-
-[HTTPBearer](../README.md#HTTPBearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listRunsApiV1SkillsSkillIdRunsGet"></a>
-# **listRunsApiV1SkillsSkillIdRunsGet**
-> SkillRunList listRunsApiV1SkillsSkillIdRunsGet(skillId)
+<a name="listRuns"></a>
+# **listRuns**
+> SkillRunList listRuns(skillId)
 
 List Runs
 
@@ -396,7 +311,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 
-apiInstance.listRunsApiV1SkillsSkillIdRunsGet(skillId, (error, data, response) => {
+apiInstance.listRuns(skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -424,9 +339,54 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listToolsApiV1SkillsSkillIdToolsGet"></a>
-# **listToolsApiV1SkillsSkillIdToolsGet**
-> SkillToolList listToolsApiV1SkillsSkillIdToolsGet(skillId)
+<a name="listSkillDatasources"></a>
+# **listSkillDatasources**
+> SkillDatasosurceList listSkillDatasources(skillId)
+
+List Datasources
+
+List skill datasources
+
+### Example
+```javascript
+import {Askaiden} from 'askaiden';
+let defaultClient = Askaiden.ApiClient.instance;
+
+
+let apiInstance = new Askaiden.SkillsApi();
+let skillId = "skillId_example"; // String | 
+
+apiInstance.listSkillDatasources(skillId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **skillId** | **String**|  | 
+
+### Return type
+
+[**SkillDatasosurceList**](SkillDatasosurceList.md)
+
+### Authorization
+
+[HTTPBearer](../README.md#HTTPBearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="listSkillTools"></a>
+# **listSkillTools**
+> SkillToolList listSkillTools(skillId)
 
 List Tools
 
@@ -441,7 +401,7 @@ let defaultClient = Askaiden.ApiClient.instance;
 let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 
-apiInstance.listToolsApiV1SkillsSkillIdToolsGet(skillId, (error, data, response) => {
+apiInstance.listSkillTools(skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -469,9 +429,49 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete"></a>
-# **removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete**
-> Object removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete(skillId, datasourceId)
+<a name="listSkills"></a>
+# **listSkills**
+> SkillList listSkills()
+
+List
+
+List all skills
+
+### Example
+```javascript
+import {Askaiden} from 'askaiden';
+let defaultClient = Askaiden.ApiClient.instance;
+
+
+let apiInstance = new Askaiden.SkillsApi();
+apiInstance.listSkills((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SkillList**](SkillList.md)
+
+### Authorization
+
+[HTTPBearer](../README.md#HTTPBearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="removeDatasource"></a>
+# **removeDatasource**
+> Object removeDatasource(skillId, datasourceId)
 
 Remove Datasource
 
@@ -487,7 +487,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 let datasourceId = "datasourceId_example"; // String | 
 
-apiInstance.removeDatasourceApiV1SkillsSkillIdDatasourcesDatasourceIdDelete(skillId, datasourceId, (error, data, response) => {
+apiInstance.removeDatasource(skillId, datasourceId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -516,9 +516,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="removeToolApiV1SkillsSkillIdToolsToolIdDelete"></a>
-# **removeToolApiV1SkillsSkillIdToolsToolIdDelete**
-> Object removeToolApiV1SkillsSkillIdToolsToolIdDelete(skillId, toolId)
+<a name="removeTool"></a>
+# **removeTool**
+> Object removeTool(skillId, toolId)
 
 Remove Tool
 
@@ -534,7 +534,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let skillId = "skillId_example"; // String | 
 let toolId = "toolId_example"; // String | 
 
-apiInstance.removeToolApiV1SkillsSkillIdToolsToolIdDelete(skillId, toolId, (error, data, response) => {
+apiInstance.removeTool(skillId, toolId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -563,9 +563,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="updateApiV1SkillsSkillIdPatch"></a>
-# **updateApiV1SkillsSkillIdPatch**
-> AppModelsResponseSkill updateApiV1SkillsSkillIdPatch(body, skillId)
+<a name="updateSkill"></a>
+# **updateSkill**
+> AppModelsResponseSkill updateSkill(body, skillId)
 
 Update
 
@@ -581,7 +581,7 @@ let apiInstance = new Askaiden.SkillsApi();
 let body = new Askaiden.AppModelsRequestSkill(); // AppModelsRequestSkill | 
 let skillId = "skillId_example"; // String | 
 
-apiInstance.updateApiV1SkillsSkillIdPatch(body, skillId, (error, data, response) => {
+apiInstance.updateSkill(body, skillId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

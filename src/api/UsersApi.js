@@ -37,8 +37,8 @@ export class UsersApi {
     }
 
     /**
-     * Callback function to receive the result of the createApiV1UserPost operation.
-     * @callback moduleapi/UsersApi~createApiV1UserPostCallback
+     * Callback function to receive the result of the createUser operation.
+     * @callback moduleapi/UsersApi~createUserCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -48,15 +48,15 @@ export class UsersApi {
      * Create
      * Create a user
      * @param {module:model/AppModelsRequestUser} body 
-     * @param {module:api/UsersApi~createApiV1UserPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UsersApi~createUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createApiV1UserPost(body, callback) {
+    createUser(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling createApiV1UserPost");
+        throw new Error("Missing the required parameter 'body' when calling createUser");
       }
 
       let pathParams = {
@@ -84,8 +84,8 @@ export class UsersApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteApiV1UserDelete operation.
-     * @callback moduleapi/UsersApi~deleteApiV1UserDeleteCallback
+     * Callback function to receive the result of the deleteUser operation.
+     * @callback moduleapi/UsersApi~deleteUserCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -94,10 +94,10 @@ export class UsersApi {
     /**
      * Delete
      * Delete a User
-     * @param {module:api/UsersApi~deleteApiV1UserDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UsersApi~deleteUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteApiV1UserDelete(callback) {
+    deleteUser(callback) {
       
       let postBody = null;
 
@@ -126,8 +126,8 @@ export class UsersApi {
       );
     }
     /**
-     * Callback function to receive the result of the getApiV1UserGet operation.
-     * @callback moduleapi/UsersApi~getApiV1UserGetCallback
+     * Callback function to receive the result of the getUser operation.
+     * @callback moduleapi/UsersApi~getUserCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsRequestUser{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -136,10 +136,10 @@ export class UsersApi {
     /**
      * Get
      * Get a user
-     * @param {module:api/UsersApi~getApiV1UserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UsersApi~getUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getApiV1UserGet(callback) {
+    getUser(callback) {
       
       let postBody = null;
 
@@ -168,8 +168,8 @@ export class UsersApi {
       );
     }
     /**
-     * Callback function to receive the result of the updateApiV1UserPatch operation.
-     * @callback moduleapi/UsersApi~updateApiV1UserPatchCallback
+     * Callback function to receive the result of the updateUser operation.
+     * @callback moduleapi/UsersApi~updateUserCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AppModelsResponseUser{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -179,15 +179,15 @@ export class UsersApi {
      * Update
      * Update a user
      * @param {module:model/AppModelsRequestUser} body 
-     * @param {module:api/UsersApi~updateApiV1UserPatchCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UsersApi~updateUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    updateApiV1UserPatch(body, callback) {
+    updateUser(body, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling updateApiV1UserPatch");
+        throw new Error("Missing the required parameter 'body' when calling updateUser");
       }
 
       let pathParams = {
